@@ -1,0 +1,42 @@
+.nav-menu {
+    margin-top: -3rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    --bg-opacity: 1;
+    background-color: #edf2f7;
+    background-color: rgba(237, 242, 247, var(--bg-opacity));
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    width: auto;
+  }
+  
+  @media (min-width: 1024px) {
+    .nav-menu {
+      margin-left: -1rem;
+      margin-right: -1rem;
+      background-color: transparent;
+      display: block;
+      border-bottom-width: 0;
+      margin-top: 0.25rem;
+      padding-left: 0;
+      padding-right: 1rem;
+      padding-top: 0;
+      box-shadow: none;
+      width: 25%;
+    }
+  }
+  
+  .nav-menu__item {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+    --text-opacity: 1;
+    color: #2d3748;
+    color: rgba(45, 55, 72, var(--text-opacity));
+    font-size: .925rem;
+  }
