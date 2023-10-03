@@ -12,7 +12,7 @@ We’ll reach out to you shortly in order to set up a meeting that will allow us
 We look forward to hearing from you soon.
 </p>
 
-<form name="contact" class="mb-12" netlify>
+<form action="/contact" name="contact" class="mb-12" netlify>
     <div class="flex flex-wrap mb-6 -mx-3">
         <div class="w-full md:w-1/2 mb-6 md:mb-0 px-3">
             <label class="block mb-2 text-gray-800 text-sm font-semibold" for="contact-name">
