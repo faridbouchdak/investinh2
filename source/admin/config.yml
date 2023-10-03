@@ -4,12 +4,12 @@ backend:
 display_url: https://investinh2.com
 
 publish_mode: editorial_workflow
-media_folder: "source/assets/images/uploads"
-public_folder: "assets/images/uploads"
+media_folder: "source/assets/images"
+public_folder: "assets/images"
 
 site_url: https://investinh2.com/
 
-logo_url: "{{site_url}}/assets/images/investinh2-logo.svg"
+logo_url: "{{site_url}}/assets/images/hydrogen_bubble.png"
 
 local_backend: true
 
@@ -18,7 +18,7 @@ collections:
     label: 'Categories'
     label_singular: 'Category'
     description: 'Categories for the posts'
-    folder: '_categories'
+    folder: 'source/_categories'
     create: true
     fields:
       - { label: 'Name', name: 'name', widget: 'string', hint: 'feature or configuration' }
