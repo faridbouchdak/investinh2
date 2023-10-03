@@ -14,6 +14,14 @@ logo_url: "{{site_url}}/assets/images/investinh2-logo.svg"
 local_backend: true
 
 collections:
+  - name: 'categories'
+    label: 'Categories'
+    label_singular: 'Category'
+    description: 'Categories for the posts'
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string', hint: 'feature or configuration' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+
   - name: "posts"
     label: "Posts"
     label_singular: "Post"
@@ -41,8 +49,10 @@ collections:
       - label: "Categories"
         name: "categories"
         widget: "select"
+        collection: 'categories'
         multiple: true
-        options: ["feature", "configuration"]
+        search_fields: ['name']
+        value_field: 'name'
       - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be featured on the home page?" }
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
       - { name: "section", widget: "hidden", required: true, default: "content" }
