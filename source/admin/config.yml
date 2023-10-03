@@ -18,6 +18,8 @@ collections:
     label: 'Categories'
     label_singular: 'Category'
     description: 'Categories for the posts'
+    folder: '_categories'
+    create: true
     fields:
       - { label: 'Name', name: 'name', widget: 'string', hint: 'feature or configuration' }
       - { label: 'Description', name: 'description', widget: 'markdown' }
@@ -53,6 +55,7 @@ collections:
         multiple: true
         search_fields: ['name']
         value_field: 'name'
+        options: ['a', 'b', 'c']
       - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be featured on the home page?" }
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
       - { name: "section", widget: "hidden", required: true, default: "content" }
