@@ -1,10 +1,17 @@
 backend:
   name: git-gateway
+  branch: main
 display_url: https://investinh2.com
 
 publish_mode: editorial_workflow
 media_folder: "source/assets/images/uploads"
 public_folder: "assets/images/uploads"
+
+site_url: https://investinh2.com/
+
+logo_url: "{{site_url}}/assets/images/investinh2-logo.svg"
+
+local_backend: true
 
 collections:
   - name: "posts"
