@@ -7,7 +7,7 @@ publish_mode: editorial_workflow
 media_folder: "source/assets/images"
 public_folder: "assets/images"
 
-site_url: https://investinh2.com/
+site_url: https://investinh2.com
 
 logo_url: "{{site_url}}/assets/images/hydrogen_bubble.png"
 
