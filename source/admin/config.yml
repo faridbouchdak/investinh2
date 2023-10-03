@@ -21,7 +21,7 @@ collections:
     folder: 'source/_categories'
     create: true
     fields:
-      - { label: 'Name', name: 'name', widget: 'string', hint: 'feature or configuration' }
+      - { label: 'Title', name: 'title', widget: 'string', hint: 'feature or configuration' }
       - { label: 'Description', name: 'description', widget: 'markdown' }
 
   - name: "posts"
@@ -50,12 +50,11 @@ collections:
             multiple: false
       - label: "Categories"
         name: "categories"
-        widget: "select"
+        widget: "relationPostCategory"
         collection: 'categories'
         multiple: true
-        search_fields: ['name']
-        value_field: 'name'
-        options: ['a', 'b', 'c']
+        search_fields: ['title']
+        value_field: 'title'
       - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be featured on the home page?" }
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
       - { name: "section", widget: "hidden", required: true, default: "content" }
