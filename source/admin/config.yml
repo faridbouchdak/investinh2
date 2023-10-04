@@ -70,7 +70,13 @@ collections:
     preview_path: "blog/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true, default: "" }
-      - { label: "Author", name: "author", widget: "string", required: true, default: "" }
+      - label: "Authors"
+        name: "authors"
+        widget: "relation"
+        collection: 'authors'
+        multiple: false
+        search_fields: ['title', 'first-name', 'last-name']
+        value_field: 'title'
       - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", required: true, default: "" }
       - { label: "Description", name: "description", widget: "string", required: true, default: "" }
       - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
