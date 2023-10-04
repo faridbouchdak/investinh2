@@ -10,29 +10,54 @@ media_folder: "source/assets/images"
 public_folder: "assets/images"
 
 site_url: https://investinh2.com
+display_url: https://investinh2.com
 
 logo_url: "{{site_url}}/assets/images/hydrogen_bubble.png"
 
-display_url: "{{site_url}}"
-
-local_backend: true
+local_backend: false
 
 collections:
   - name: 'categories'
-    label: 'Categories'
+    label: 'Categories (blog)'
     label_singular: 'Category'
     description: 'Categories for the posts'
     folder: 'source/_categories'
     slug: "{{slug}}"
     extension: "md"
     create: true
-    preview_path: "categories/{{slug}}"
+    preview_path: "blog/categories/{{slug}}"
     fields:
       - { label: 'Title', name: 'title', widget: 'string', hint: 'feature or configuration' }
       - { label: 'Description', name: 'description', widget: 'markdown' }
 
+  - name: 'authors'
+    label: 'Authors'
+    label_singular: 'Author'
+    description: 'Authors for the content of the site and team section of the about-page'
+    folder: 'source/_team'
+    slug: "{{slug}}"
+    extension: "md"
+    create: true
+    preview_path: ""
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true, default: "" }
+      - { label: "Author", name: "author", widget: "hidden", default: "{{first-name}} {{last-name}}" }
+      - { label: "First Name", name: "first-name", widget: "string", required: true, default: "" }
+      - { label: "Last Name", name: "last-name", widget: "string", required: true, default: "" }
+      - { label: "Description", name: "description", widget: "string", required: true, default: "" }
+      - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
+      - label: "Image"
+        name: "cover_image"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
+      - { name: "section", widget: "hidden", required: true, default: "content" }
+
   - name: "posts"
-    label: "Posts"
+    label: "Blog Posts"
     label_singular: "Post"
     description: >
       All my blog posts
