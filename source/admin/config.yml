@@ -1,15 +1,19 @@
 backend:
   name: git-gateway
   branch: main
-display_url: https://investinh2.com
+
+locale: "nl"
 
 publish_mode: editorial_workflow
+
 media_folder: "source/assets/images"
 public_folder: "assets/images"
 
 site_url: https://investinh2.com
 
 logo_url: "{{site_url}}/assets/images/hydrogen_bubble.png"
+
+display_url: "{{site_url}}"
 
 local_backend: true
 
@@ -19,7 +23,10 @@ collections:
     label_singular: 'Category'
     description: 'Categories for the posts'
     folder: 'source/_categories'
+    slug: "{{slug}}"
+    extension: "md"
     create: true
+    preview_path: "categories/{{slug}}"
     fields:
       - { label: 'Title', name: 'title', widget: 'string', hint: 'feature or configuration' }
       - { label: 'Description', name: 'description', widget: 'markdown' }
@@ -35,6 +42,7 @@ collections:
     format: "yaml-frontmatter"
     create: true
     identifier_field: "title"
+    preview_path: "blog/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true, default: "" }
       - { label: "Author", name: "author", widget: "string", required: true, default: "" }
@@ -50,7 +58,7 @@ collections:
             multiple: false
       - label: "Categories"
         name: "categories"
-        widget: "relationPostCategory"
+        widget: "relation"
         collection: 'categories'
         multiple: true
         search_fields: ['title']
