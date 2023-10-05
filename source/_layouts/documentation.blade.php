@@ -10,6 +10,7 @@
         <div class="DocSearch-content w-full break-words pb-16 lg:pl-4" v-pre>
             @yield('content')
         </div>
+        Modified on: {{ date('F j, Y', $page->date) }}
     </div>
 </section>
 @endsection

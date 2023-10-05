@@ -3,6 +3,7 @@ title: Getting Started
 description: Getting started with Jigsaw's docs starter template is as easy as 1, 2, 3.
 extends: _layouts.documentation
 section: content
+date: 2022-07-24
 ---
 
 # Getting Started {#getting-started}

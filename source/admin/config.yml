@@ -4,7 +4,7 @@ backend:
 
 locale: "nl"
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 media_folder: "source/assets/images"
 public_folder: "assets/images"
@@ -33,19 +33,16 @@ collections:
   - name: 'authors'
     label: 'Authors'
     label_singular: 'Author'
-    description: 'Authors for the content of the site and team section of the about-page'
+    description: 'Authors: for the content of the site and team section of the about-page'
     folder: 'source/_team'
     slug: "{{slug}}"
     extension: "md"
     create: true
     preview_path: ""
     fields:
-      - { label: "Title", name: "title", widget: "string", required: true, default: "" }
-      - { label: "Author", name: "author", widget: "hidden", default: "{{first-name}} {{last-name}}" }
-      - { label: "First Name", name: "first-name", widget: "string", required: true, default: "" }
-      - { label: "Last Name", name: "last-name", widget: "string", required: true, default: "" }
-      - { label: "Description", name: "description", widget: "string", required: true, default: "" }
-      - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
+      - { label: "Name", name: "name", widget: "string", required: true, default: "" }
+      - { label: "Expertise", name: "expertise", widget: "string", required: true, default: "" }
+      - { label: "Content", name: "body", widget: "markdown", hint: "Your bio goes here." }
       - label: "Image"
         name: "cover_image"
         widget: "image"
@@ -60,7 +57,7 @@ collections:
     label: "Blog Posts"
     label_singular: "Post"
     description: >
-      All my blog posts
+      All Blog Posts
     folder: "source/_posts"
     slug: "{{slug}}"
     extension: "md"
@@ -75,8 +72,8 @@ collections:
         widget: "relation"
         collection: 'authors'
         multiple: false
-        search_fields: ['title', 'first-name', 'last-name']
-        value_field: 'title'
+        search_fields: ['name']
+        value_field: 'name'
       - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", required: true, default: "" }
       - { label: "Description", name: "description", widget: "string", required: true, default: "" }
       - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
@@ -96,4 +93,24 @@ collections:
         value_field: 'title'
       - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be featured on the home page?" }
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
+      - { name: "section", widget: "hidden", required: true, default: "content" }
+
+  - name: "kb"
+    label: "Knowledge Base"
+    label_singular: "Document"
+    description: >
+      All Documents
+    folder: "source/_docs"
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    create: true
+    identifier_field: "title"
+    preview_path: "kb/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true, default: "" }
+      - { label: "Date", name: "date", widget: "hidden", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", required: true, default: "{{year}}-{{month}}-{{day}}" }
+      - { label: "Description", name: "description", widget: "string", required: true, default: "" }
+      - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
+      - { name: "extends", widget: "hidden", required: true, default: "_layouts.documentation" }
       - { name: "section", widget: "hidden", required: true, default: "content" }

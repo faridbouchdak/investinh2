@@ -29,7 +29,7 @@ return [
         ],
         'team' => [
             'path' => 'team',
-            'sort' => 'last_name',
+            'sort' => 'name',
         ],
     ],
 

@@ -3,6 +3,7 @@ title: Customizing Your Site
 description: Customizing your Jigsaw docs site
 extends: _layouts.documentation
 section: content
+date: 2022-07-24
 ---
 # Customizing Your Site {#customizing}
 

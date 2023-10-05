@@ -3,6 +3,7 @@ title: Navigation
 description: Building a navigation menu for your site
 extends: _layouts.documentation
 section: content
+date: 2022-07-24
 ---
 
 # Navigation {#navigation}
