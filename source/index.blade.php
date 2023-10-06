@@ -28,7 +28,7 @@
             <div class="flex my-10">
                 <a href="/contact" title="{{ $page->siteName }} Let's talk" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Let's talk</a>
 
-                <a href="/kb/getting-started" title="H2 explained" class="bg-gray-400 hover:bg-gray-600 text-blue-100 font-normal hover:text-white rounded py-2 px-6">H<sub>2</sub> explained</a>
+                <a href="/kb/what-is-hydrogen-energy" title="H2 explained" class="bg-gray-400 hover:bg-gray-600 text-blue-100 font-normal hover:text-white rounded py-2 px-6">H<sub>2</sub> explained</a>
             </div>
         </div>
 
