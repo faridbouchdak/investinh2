@@ -6,11 +6,11 @@ section: content
 date: 2023-10-06
 ---
 
-## Introduction
+## Hydrogen Energy
 
 Hydrogen Energy has emerged as a promising cleaner alternative to fossil fuels. With the growing concerns over climate change and the detrimental impact of fossil fuels, experts are leaning towards hydrogen as a more efficient means to decarbonize various industries.
 
-## Hydrogen Energy: a cleaner alternative to fossil fuels
+### A cleaner alternative to fossil fuels
 
 Hydrogen is not just abundant but also occurs naturally; making it the most widespread substance in the universe. Clean hydrogen, specifically, refers to hydrogen production with minimal to zero carbon emissions, generally through renewable power sources or via biofuels. Studies have shown that by incorporating hydrogen alongside other green energy technologies, we can witness over 20% of emissions reductions by 2050.
 
