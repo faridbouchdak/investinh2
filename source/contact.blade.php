@@ -22,7 +22,7 @@ We look forward to hearing from you soon.
             <input
                 type="text"
                 id="contact-name"
-                placeholder="Jane Doe"
+                placeholder="Please provide your name"
                 name="name"
                 class="block w-full border shadow rounded-lg outline-none mb-2 px-4 py-3"
                 required
@@ -44,10 +44,40 @@ We look forward to hearing from you soon.
             >
         </div>
     </div>
+    <div class="flex flex-wrap mb-6 -mx-3">
+        <div class="w-full md:w-1/2 mb-6 md:mb-0 px-3">
+            <label class="block mb-2 text-gray-800 text-sm font-semibold" for="contact-company">
+                Company
+            </label>
 
+            <input
+                type="text"
+                id="contact-company"
+                placeholder="please enter your company or organisation"
+                name="company"
+                class="block w-full border shadow rounded-lg outline-none mb-2 px-4 py-3"
+                required
+            >
+        </div>
+
+        <div class="w-full px-3 md:w-1/2">
+            <label class="block text-gray-800 text-sm font-semibold mb-2" for="contact-role">
+                Title / Role
+            </label>
+
+            <input
+                type="text"
+                id="contact-role"
+                placeholder="Please enter your title / role"
+                name="role"
+                class="block w-full border shadow rounded-lg outline-none mb-2 px-4 py-3"
+                required
+            >
+        </div>
+    </div>
     <div class="w-full mb-12">
         <label class="block text-gray-800 text-sm font-semibold mb-2" for="contact-message">
-            Message
+            How can we work together?
         </label>
 
         <textarea
@@ -55,9 +85,23 @@ We look forward to hearing from you soon.
             rows="4"
             name="message"
             class="block w-full border shadow rounded-lg outline-none appearance-none mb-2 px-4 py-3"
-            placeholder="A lovely message here."
+            placeholder="Please provide context"
             required
         ></textarea>
+    </div>
+    <div class="w-full mb-12">
+        <label class="block text-gray-800 text-sm font-semibold mb-2" for="contact-location">
+            Where are you located?
+        </label>
+
+        <input
+                type="text"
+                id="contact-location"
+                placeholder="Please enter your location"
+                name="location"
+                class="block w-full border shadow rounded-lg outline-none mb-2 px-4 py-3"
+                required
+            >
     </div>
 
     <div class="flex justify-end w-full">
