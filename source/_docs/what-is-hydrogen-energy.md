@@ -30,7 +30,7 @@ In the context of transportation, hydrogen combustion engines can help the secto
 
 The shift to hydrogen energy is not without challenges. The hydrogen value chain is capital-intensive and complex. Additionally, technology advancements and regulation development are progressing at uneven rates across the world. Even after substantial investments in large-scale hydrogen projects — over $320 billion worldwide — an investment of $460 billion is still required by 2030 to address funding gaps in production, infrastructure, and end-use applications.
 
-Countries with abundant hydrocarbon resources will play instrumental roles in scaling competitive hydrogen supply, stimulating local demand, developing transportation technology, and facilitating cooperation across industries and nations. It emphasizes the importance of governments, industry stakeholders, and international cooperation in accelerating the global development and adoption of clean hydrogen energy.
+Countries with abundant hydrocarbon resources will play instrumental roles in scaling competitive hydrogen supply, stimulating local demand, developing transportation technology, and facilitating cooperation across industries and nations. It emphasizes the importance of [governments](/kb/g20-principles-on-hydrogen), industry stakeholders, and international cooperation in accelerating the global development and adoption of clean hydrogen energy.
 
 ## Conclusion
 
