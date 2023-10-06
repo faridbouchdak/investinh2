@@ -19,14 +19,14 @@
 <section class="max-w-6xl mx-auto px-6 py-10 md:py-12">
     <div class="flex flex-col-reverse mb-8 lg:flex-row lg:mb-24">
         <div class="mt-8">
-            <h1>Invest in <span class="text-green-500">green Hydrogen</span></h1>
+            <h1>Invest in <span class="text-green-500">green Hydrogen</span> Energy</h1>
 
             <h2 class="font-light mt-4">{{ $page->siteDescription }}</h2>
 
             <p class="text-lg font-bold">Consider us part of your team. <br class="hidden sm:block">We are a small team of highly experienced financial, procurement and project management enthousiasts.</p>
 
             <div class="flex my-10">
-                <a href="/contact" title="{{ $page->siteName }} getting started" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Get Started</a>
+                <a href="/contact" title="{{ $page->siteName }} Let's talk" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Let's talk</a>
 
                 <a href="/kb/getting-started" title="H2 explained" class="bg-gray-400 hover:bg-gray-600 text-blue-100 font-normal hover:text-white rounded py-2 px-6">H<sub>2</sub> explained</a>
             </div>
@@ -45,7 +45,7 @@
             <h3 id="intro-project-pipeline" class="text-2xl text-blue-900 mb-0">Project pipeline<br/>&amp; Feasibility Study</h3>
 
             <p>We offer support to governments and various organisations in executing energy infrastructure projects. Our assistance includes establishing a project pipeline, prioritising projects based on factors such as urgency, impact, budget availability, and feasibility, along with other elements of project management.</p>
-            <p>Our comprehensive assessment of your infrastructure project's viability considers technical, economic, legal, environmental, and social factors to aid in making well-informed decisions. Our experts pinpoint potential risks and devise mitigation strategies, guaranteeing your project is primed for success.</p>
+            <p>Our comprehensive assessment of your energy infrastructure project's viability considers technical, economic, legal, environmental, and social factors to aid in making well-informed decisions. Our experts pinpoint potential risks and devise mitigation strategies, guaranteeing your project is primed for success.</p>
         </div>
 
         <div class="mb-8 mx-3 px-2 md:w-1/3">

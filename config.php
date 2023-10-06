@@ -6,7 +6,7 @@ return [
     'baseUrl' => '',
     'production' => false,
     'siteName' => 'Invest in H2',
-    'siteDescription' => 'Driving change by unlocking a cleaner, brighter tomorrow.',
+    'siteDescription' => 'We Drive Sustainable Change: Unlocking a Cleaner, Brighter Tomorrow.',
     'siteAuthor' => 'Farid Bouchdak',
 
     // collections
