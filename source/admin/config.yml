@@ -6,13 +6,13 @@ locale: "nl"
 
 # publish_mode: editorial_workflow
 
-media_folder: "source/assets/images"
-public_folder: "assets/images"
+media_folder: "source/assets/img"
+public_folder: "assets/img"
 
 site_url: https://investinh2.com
 display_url: https://investinh2.com
 
-logo_url: "{{site_url}}/assets/images/hydrogen_bubble.png"
+logo_url: "/assets/images/hydrogen_bubble.png"
 
 local_backend: false
 

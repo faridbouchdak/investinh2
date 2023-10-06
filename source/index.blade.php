@@ -40,7 +40,7 @@
     <h3>Our services</h3>
     <div class="md:flex -mx-2 -mx-4">
         <div class="mb-8 mx-3 px-2 md:w-1/3">
-            <img src="/assets/img/icon-warp-pipe.svg" class="h-12 w-12" alt="icon of a pipe">
+            <img src="/assets/images/icon-warp-pipe.svg" class="h-12 w-12" alt="icon of a pipe">
 
             <h3 id="intro-project-pipeline" class="text-2xl text-blue-900 mb-0">Project pipeline<br/>&amp; Feasibility Study</h3>
 
@@ -49,7 +49,7 @@
         </div>
 
         <div class="mb-8 mx-3 px-2 md:w-1/3">
-            <img src="/assets/img/icon-wallet.svg" class="h-12 w-12" alt="terminal icon">
+            <img src="/assets/images/icon-wallet.svg" class="h-12 w-12" alt="terminal icon">
 
             <h3 id="intro-funding-financing" class="text-2xl text-blue-900 mb-0">Funding<br/>&amp; Financing</h3>
 
@@ -65,7 +65,7 @@
         </div>
 
         <div class="mx-3 px-2 md:w-1/3">
-            <img src="/assets/img/icon-contract-solid.svg" class="h-12 w-12" alt="stack icon">
+            <img src="/assets/images/icon-contract-solid.svg" class="h-12 w-12" alt="stack icon">
 
             <h3 id="intro-procurement-implementation" class="text-2xl text-blue-900 mb-0">Procurement<br/>&amp; implementation</h3>
 
