@@ -16,6 +16,11 @@
 
         <meta name="twitter:image:alt" content="{{ $page->siteName }}">
         <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@bouchdak">
+        <meta name="twitter:creator" content="@bouchdak">
+        <meta name="twitter:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}">
+        <meta name="twitter:description" content="{{ $page->description ?? $page->siteDescription }}">
+        <meta name="twitter:image" content="/assets/images/hydrogen_bubble.png">
 
         @if ($page->docsearchApiKey && $page->docsearchIndexName)
             <meta name="generator" content="tighten_jigsaw_doc">
