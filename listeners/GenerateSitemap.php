@@ -12,8 +12,9 @@ class GenerateSitemap
         '/assets/*',
         '*/favicon.ico',
         '*/404*',
-        '/admin/*',
-        '/blog/feed.atom'
+        '/blog/feed.atom',
+        '/blog/categories',
+        '/admin',
     ];
 
     public function handle(Jigsaw $jigsaw)
