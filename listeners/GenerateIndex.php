@@ -16,6 +16,20 @@ class GenerateIndex
                 'snippet' => $page->getExcerpt(),
             ];
         })->values());
+        $data .= collect($jigsaw->getCollection('team')->map(function ($page) use ($jigsaw) {
+            return [
+                'title' => $page->name,
+                'link' => rightTrimPath($jigsaw->getConfig('baseUrl')) . $page->getPath(),
+                'snippet' => $page->expertise,
+            ];
+        })->values());
+        $data .= collect($jigsaw->getCollection('docs')->map(function ($page) use ($jigsaw) {
+            return [
+                'title' => $page->title,
+                'link' => rightTrimPath($jigsaw->getConfig('baseUrl')) . $page->getPath(),
+                'snippet' => $page->description,
+            ];
+        })->values());
 
         file_put_contents($jigsaw->getDestinationPath() . '/index.json', json_encode($data));
     }
