@@ -8,7 +8,7 @@ class GenerateIndex
 {
     public function handle(Jigsaw $jigsaw)
     {
-        $data = collect($jigsaw->getCollection('posts')->map(function ($page) use ($jigsaw) {
+        $data_posts = collect($jigsaw->getCollection('posts')->map(function ($page) use ($jigsaw) {
             return [
                 'title' => $page->title,
                 'categories' => $page->categories,
@@ -16,20 +16,22 @@ class GenerateIndex
                 'snippet' => $page->getExcerpt(),
             ];
         })->values());
-        $data .= collect($jigsaw->getCollection('team')->map(function ($page) use ($jigsaw) {
+        $data_team = collect($jigsaw->getCollection('team')->map(function ($page) use ($jigsaw) {
             return [
                 'title' => $page->name,
                 'link' => rightTrimPath($jigsaw->getConfig('baseUrl')) . $page->getPath(),
                 'snippet' => $page->expertise,
             ];
         })->values());
-        $data .= collect($jigsaw->getCollection('docs')->map(function ($page) use ($jigsaw) {
+        $data_docs = collect($jigsaw->getCollection('docs')->map(function ($page) use ($jigsaw) {
             return [
                 'title' => $page->title,
                 'link' => rightTrimPath($jigsaw->getConfig('baseUrl')) . $page->getPath(),
                 'snippet' => $page->description,
             ];
         })->values());
+
+        $data = array_merge(json_decode($data_posts), json_decode($data_team), json_decode($data_docs));
 
         file_put_contents($jigsaw->getDestinationPath() . '/index.json', json_encode($data));
     }
