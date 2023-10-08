@@ -10,8 +10,7 @@ mix.jigsaw(
         watch: ['config.php', 'source/**/*.md', 'source/**/*.php', 'source/**/*.css'],
     }
     )
-    .js('source/_assets/js/main.js', 'js')
-    .vue()
+    .js('source/_assets/js/main.js', 'js').vue()
     // .sass('source/_assets/sass/main.scss', 'css/main.css')
     .postCss('source/_assets/css/main.css', 'css/main.css', [
         require('postcss-import'),
