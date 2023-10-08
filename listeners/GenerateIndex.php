@@ -35,20 +35,6 @@ class GenerateIndex
 
         file_put_contents($jigsaw->getDestinationPath() . '/index.json', json_encode($data));
 
-        // navigation, just for test
-        $data_docs = collect($jigsaw->getCollection('docs')->map(function ($page) use ($jigsaw) {
-            return [
-                'title' => $page->title,
-                'url' => rightTrimPath($jigsaw->getConfig('baseUrl')) . $page->getPath(),
-            ];
-        })->values());
-        $new = array();
-        foreach ($data_docs as $key => $val) {
-            $new[$key] = $val;
-        }
-        print_r($new);
-        file_put_contents($jigsaw->getDestinationPath() . '/nav.json', json_encode($new));
-
     }
 
 }
