@@ -1,0 +1,9 @@
+{
+  "links": [
+    {
+      "link_title": "Contact us",
+      "link_url": "https://{{site_url}}/contact"
+    }
+  ],
+  "menu_title": "top_nav"
+}
