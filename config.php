@@ -38,9 +38,8 @@ return [
     'docsearchIndexName' => env('DOCSEARCH_INDEX'),
 
     // navigation menu
-    // 'navigation' => require_once('navigation.php'),
-    'navigation' => json_decode(file_get_contents('navigation.json'), true),
-
+    'navigation' => require_once('navigation.php'),
+    
     // helpers
     'getDate' => function ($page) {
         return Datetime::createFromFormat('U', $page->date);

@@ -13,7 +13,7 @@
         "docsearch.js": "^2.5.2",
         "fast-glob": "^3.2.12",
         "fuse.js": "^6.4.6",
-        "highlight.js": "^10.5.0",
+        "highlight.js": "^11.7.0",
         "laravel-mix": "^6.0.39",
         "laravel-mix-jigsaw": "^2.0.0",
         "laravel-mix-purgecss": "^6.0.0",
