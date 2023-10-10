@@ -53,7 +53,7 @@
 
     <body class="flex flex-col justify-between min-h-screen bg-sky-50/50 text-gray-700 leading-normal font-sans">
         <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
-            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+            <div class="container flex items-center mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }}" class="inline-flex items-center">
                         <img class="h-8 md:h-10 mr-3" src="/assets/images/investinh2-logo.svg" alt="{{ $page->siteName }} logo" />
@@ -79,7 +79,7 @@
         </main>
 
         <footer class="bg-white text-sm mt-12 py-4" role="contentinfo">
-            <section class="max-w-8xl mx-auto px-4 lg:px-8 mt-6">
+            <section class="container mx-auto px-4 lg:px-8 mt-6">
                 <h3>Thrusted by</h3>
                 <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5 mb-10">
                     <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
@@ -106,7 +106,7 @@
 
             <hr class="block my-8 border lg:hidden">
 
-            <div class="bg-white dark:bg-gray-800 relative max-w-8xl mx-auto px-4 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 relative container mx-auto px-4 lg:px-8">
                 <div class="text-start w-full lg:w-1/2 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
                     <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
                         <span class="block">
@@ -127,12 +127,12 @@
                 </div>
                 <img src="/assets/img/about.png" class="absolute top-0 right-0 hidden h-full max-w-1/2 lg:block"/>
             </div>
-            <ul class="flex flex-col md:flex-row justify-center list-none mt-8">
+            <ul class="flex justify-center flex-col md:flex-row list-none mt-8">
                 <li class="md:mr-2">
                     &copy; <a href="/" title="Invest in H2 website">Invest in H<sub>2</sub></a> {{ date('Y') }}.
                 </li>
-<!-- 
-                <li>
+
+                <!-- <li>
                     Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
                     and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
                 </li> -->
