@@ -156,11 +156,18 @@ collections:
         editor:
           preview: false
         fields:
-          - { label: 'Menu title', name: 'menu_title', widget: 'string' }
-          - label: 'Menu items'
-            name: 'links'
+          - label: 'Menus'
+            label_singular: "Menu"
+            name: 'menus'
             widget: 'list'
             allow_add: true
             fields:
-              - { label: 'Link title', name: link_title, widget: string, default: "Contact us" }
-              - { label: 'Link URL', name: link_url, widget: string, default: "https://{{site_url}}/contact" }
+              - { label: 'Menu title', name: 'menu_title', widget: 'string' }
+              - label: 'Menu items'
+                label_singular: "Menu"
+                name: 'links'
+                widget: 'list'
+                allow_add: true
+                fields:
+                  - { label: 'Link title', name: link_title, widget: string, default: "Contact us" }
+                  - { label: 'Link URL', name: link_url, widget: string, default: "https://{{site_url}}/contact" }
