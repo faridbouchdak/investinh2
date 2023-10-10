@@ -4,13 +4,14 @@ $nav = json_decode(file_get_contents('navigation.json'), true);
 $nav = $nav['menus'];
 
 foreach ($nav as $menu) {
+    $links = array();
     foreach ($menu['links'] as $link) {
         $links[$link['link_title']] = $link['link_url'];
     }
     $navigation[$menu['menu_title']]=$links;
 }
 
-return $navigation['top_nav'];
+return $navigation;
 
 // return [
 //     'Hydrogen Energy' => [
