@@ -12,6 +12,15 @@
           "link_url": "/kb/g20-principles-on-hydrogen/"
         }
       ]
+    },
+    {
+      "menu_title": "kb_nav",
+      "links": [
+        {
+          "link_title": "Contact us",
+          "link_url": "https://{{site_url}}/contact"
+        }
+      ]
     }
   ]
 }
