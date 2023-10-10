@@ -4,12 +4,16 @@
       "menu_title": "top_nav",
       "links": [
         {
-          "link_title": "Hydrogen Energy",
-          "link_url": "/kb/what-is-hydrogen-energy/"
+          "link_title": "Blog",
+          "link_url": "/blog"
         },
         {
-          "link_title": "Government support (G20)",
-          "link_url": "/kb/g20-principles-on-hydrogen/"
+          "link_title": "About",
+          "link_url": "/about"
+        },
+        {
+          "link_title": "Contact",
+          "link_url": "/contact"
         }
       ]
     },
@@ -17,8 +21,12 @@
       "menu_title": "kb_nav",
       "links": [
         {
-          "link_title": "Contact us",
-          "link_url": "https://{{site_url}}/contact"
+          "link_title": "Hydrogen Energy",
+          "link_url": "/kb/what-is-hydrogen-energy/"
+        },
+        {
+          "link_title": "Government support (G20)",
+          "link_url": "/kb/g20-principles-on-hydrogen/"
         }
       ]
     }

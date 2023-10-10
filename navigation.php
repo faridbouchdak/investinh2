@@ -5,12 +5,12 @@ $nav = $nav['menus'];
 
 foreach ($nav as $menu) {
     foreach ($menu['links'] as $link) {
-        $links[] = [$link['link_title']=>$link['link_url']];
+        $links[$link['link_title']] = $link['link_url'];
     }
     $navigation[$menu['menu_title']]=$links;
 }
 
-return $navigation['top_nav'][0];
+return $navigation['top_nav'];
 
 // return [
 //     'Hydrogen Energy' => [
