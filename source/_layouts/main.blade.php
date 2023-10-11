@@ -51,14 +51,14 @@
         @endif
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen bg-sky-50/50 text-gray-700 leading-normal font-sans">
+    <body class="flex flex-col justify-between min-h-screen bg-sky-50/50 text-green-800 leading-normal font-sans">
         <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
             <div class="container flex items-center mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }}" class="inline-flex items-center">
                         <img class="h-8 md:h-10 mr-3" src="/assets/images/investinh2-logo.svg" alt="{{ $page->siteName }} logo" />
 
-                        <h1 class="text-lg md:text-2xl text-blue-800 font-semibold hover:text-blue-600 my-0">Invest in H<sub>2</sub></h1>
+                        <h1 class="text-lg md:text-2xl font-semibold hover:text-blue-600 my-0">Invest in H<sub>2</sub></h1>
                     </a>
                 </div>
 
@@ -112,7 +112,7 @@
                         <span class="block">
                             How can we
                         </span>
-                        <span class="block text-indigo-500">
+                        <span class="block text-green-500">
                             serve you?
                         </span>
                     </h2>

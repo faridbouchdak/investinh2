@@ -5,7 +5,7 @@
 
     @foreach ($items as $label => $item)
     <a title="{{ $page->siteName }} {{ $label }}" href="{{ $item }}"
-        class="ml-6 hover:text-blue-500 {{ $page->isActive($item) ? 'active text-blue-500' : 'text-gray-700' }}">
+        class="ml-6 hover:text-blue-600 {{ $page->isActive($item) ? 'active text-blue-600' : 'text-green-800' }}">
         {{ $label }}
     </a>
     @endforeach

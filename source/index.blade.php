@@ -28,7 +28,7 @@
             <div class="flex my-10">
                 <a href="/contact" title="{{ $page->siteName }} Let's talk" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Let's talk</a>
 
-                <a href="/kb/what-is-hydrogen-energy" title="H2 explained" class="bg-gray-400 hover:bg-gray-600 text-blue-100 font-normal hover:text-white rounded py-2 px-6">H<sub>2</sub> explained</a>
+                <a href="/kb/what-is-hydrogen-energy" title="H2 explained" class="bg-green-800 hover:bg-green-600 text-green-100 font-normal hover:text-white rounded py-2 px-6">H<sub>2</sub> explained</a>
             </div>
         </div>
 
@@ -37,12 +37,12 @@
 
     <hr class="block my-8 border lg:hidden">
 
-    <h3>Our services</h3>
+    <h2>Our services</h2>
     <div class="md:flex -mx-2 -mx-4">
         <div class="mb-8 mx-3 px-2 md:w-1/3">
             <img src="/assets/images/icon-warp-pipe.svg" class="h-12 w-12" alt="icon of a pipe">
 
-            <h3 id="intro-project-pipeline" class="text-2xl text-blue-900 mb-0">Project pipeline<br/>&amp; Feasibility Study</h3>
+            <h3 id="intro-project-pipeline" class="text-2xl mb-0">Project pipeline<br/>&amp; Feasibility Study</h3>
 
             <p>We offer support to governments and various organisations in executing energy infrastructure projects. Our assistance includes establishing a project pipeline, prioritising projects based on factors such as urgency, impact, budget availability, and feasibility, along with other elements of project management.</p>
             <p>Our comprehensive assessment of your energy infrastructure project's viability considers technical, economic, legal, environmental, and social factors to aid in making well-informed decisions. Our experts pinpoint potential risks and devise mitigation strategies, guaranteeing your project is primed for success.</p>
@@ -51,7 +51,7 @@
         <div class="mb-8 mx-3 px-2 md:w-1/3">
             <img src="/assets/images/icon-wallet.svg" class="h-12 w-12" alt="terminal icon">
 
-            <h3 id="intro-funding-financing" class="text-2xl text-blue-900 mb-0">Funding<br/>&amp; Financing</h3>
+            <h3 id="intro-funding-financing" class="text-2xl mb-0">Funding<br/>&amp; Financing</h3>
 
             <p>We identify potential sources of funding and/or financing, which can include government grants, public-private partnerships, loans, or bonds. Create a financial plan and secure the necessary funding to proceed with the project.</p>
             <span class="font-medium text-sm font-mono mb-3">Key Features:</span>
@@ -67,7 +67,7 @@
         <div class="mx-3 px-2 md:w-1/3">
             <img src="/assets/images/icon-contract-solid.svg" class="h-12 w-12" alt="stack icon">
 
-            <h3 id="intro-procurement-implementation" class="text-2xl text-blue-900 mb-0">Procurement<br/>&amp; implementation</h3>
+            <h3 id="intro-procurement-implementation" class="text-2xl mb-0">Procurement<br/>&amp; implementation</h3>
 
             <p>We prepare bid documents and contracts, conducting a competitive bidding process to select contractors and suppliers. Awards are given to the winning bidders, and the physical construction of the energy infrastructure project commences.</p>
             <p>Project management and quality control measures are implemented to ensure the project remains on schedule and within budget. Additionally, we monitor and address any unexpected issues or changes that may arise.</p>
@@ -98,7 +98,7 @@
             </p>
 
             <h2 class="text-3xl mt-0">
-                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-gray-900 font-extrabold">
+                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="font-extrabold text-green-800">
                     {{ $featuredPost->title }}
                 </a>
             </h2>
@@ -106,7 +106,7 @@
             <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
 
             <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase tracking-wide mb-4">
-                Read
+                Read more &rarr;
             </a>
         </div>
 
