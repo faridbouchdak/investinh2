@@ -27,7 +27,7 @@ collections:
     create: true
     editor:
       preview: false
-    preview_path: "blog/categories/{{slug}}"
+    preview_path: "/blog/categories/{{slug}}"
     fields:
       - { label: 'Title', name: 'title', widget: 'string', hint: 'feature or configuration' }
       - { label: 'Description', name: 'description', widget: 'markdown' }
@@ -66,7 +66,7 @@ collections:
     format: "yaml-frontmatter"
     create: true
     identifier_field: "title"
-    preview_path: "services/{{slug}}"
+    preview_path: "/services/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true, default: "" }
       - label: "Author"
@@ -115,7 +115,7 @@ collections:
     format: "yaml-frontmatter"
     create: true
     identifier_field: "title"
-    preview_path: "blog/{{slug}}"
+    preview_path: "/blog/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true, default: "" }
       - label: "Author"
@@ -157,7 +157,7 @@ collections:
     format: "yaml-frontmatter"
     create: true
     identifier_field: "title"
-    preview_path: "kb/{{slug}}"
+    preview_path: "/kb/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true, default: "" }
       - { label: "Date", name: "date", widget: "hidden", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", required: true, default: "{{year}}-{{month}}-{{day}}" }
