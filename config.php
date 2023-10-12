@@ -31,6 +31,11 @@ return [
             'path' => 'team',
             'sort' => 'name',
         ],
+        'services' => [
+            'author' => 'Author Name', // Default author, if not provided in a post
+            'sort' => 'date',
+            'path' => 'services/{filename}',
+        ],
     ],
 
     // Algolia DocSearch credentials

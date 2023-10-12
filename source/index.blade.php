@@ -39,47 +39,20 @@
 
     <h2>Our services</h2>
     <div class="md:flex -mx-2 -mx-4">
-        <div class="mb-8 mx-3 px-2 md:w-1/3">
-            <img src="/assets/images/icon-warp-pipe.svg" class="h-12 w-12" alt="icon of a pipe">
+        @foreach ($services->where('featured', true) as $featuredService)
+            <div class="@if (!$loop->last)mb-8 @endif mx-3 px-2 md:w-1/3">
+                @if ($featuredService->card_image)
+                    <img src="{{ $featuredService->card_image }}" alt="{{ $featuredService->title }} icon" class="h-12 w-12">
+                @endif
 
-            <h3 id="intro-project-pipeline" class="text-2xl mb-0">Project pipeline<br/>&amp; Feasibility Study</h3>
+                {!! $featuredService !!}
 
-            <p>We offer support to governments and various organisations in executing energy infrastructure projects. Our assistance includes establishing a project pipeline, prioritising projects based on factors such as urgency, impact, budget availability, and feasibility, along with other elements of project management.</p>
-            <p>Our comprehensive assessment of your energy infrastructure project's viability considers technical, economic, legal, environmental, and social factors to aid in making well-informed decisions. Our experts pinpoint potential risks and devise mitigation strategies, guaranteeing your project is primed for success.</p>
-        </div>
+            </div>
 
-        <div class="mb-8 mx-3 px-2 md:w-1/3">
-            <img src="/assets/images/icon-wallet.svg" class="h-12 w-12" alt="terminal icon">
-
-            <h3 id="intro-funding-financing" class="text-2xl mb-0">Funding<br/>&amp; Financing</h3>
-
-            <p>We identify potential sources of funding and/or financing, which can include government grants, public-private partnerships, loans, or bonds. Create a financial plan and secure the necessary funding to proceed with the project.</p>
-            <span class="font-medium text-sm font-mono mb-3">Key Features:</span>
-            <ul class="list-disc list-inside">
-                <li>Funding source identification</li>
-                <li>Financial planning and budgeting</li>
-                <li>Funding application and grant management</li>
-                <li>Public-private partnership (PPP) expertise</li>
-                <li>Loan and bond procurement</li>
-            </ul>
-        </div>
-
-        <div class="mx-3 px-2 md:w-1/3">
-            <img src="/assets/images/icon-contract-solid.svg" class="h-12 w-12" alt="stack icon">
-
-            <h3 id="intro-procurement-implementation" class="text-2xl mb-0">Procurement<br/>&amp; implementation</h3>
-
-            <p>We prepare bid documents and contracts, conducting a competitive bidding process to select contractors and suppliers. Awards are given to the winning bidders, and the physical construction of the energy infrastructure project commences.</p>
-            <p>Project management and quality control measures are implemented to ensure the project remains on schedule and within budget. Additionally, we monitor and address any unexpected issues or changes that may arise.</p>
-            <span class="font-medium text-sm font-mono mb-3">Key Features:</span>
-            <ul class="list-disc list-inside">
-                <li>Bid document preparation</li>
-                <li>Competitive bidding process</li>
-                <li>Contractor and supplier selection</li>
-                <li>Contract awarding and negotiation</li>
-                <li>Contract management and compliance</li>
-            </ul>
-        </div>
+            @if (! $loop->last)
+                <hr class="border-b my-6">
+            @endif
+        @endforeach
     </div>
 </section>
 

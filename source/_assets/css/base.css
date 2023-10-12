@@ -89,7 +89,7 @@ h6 {
 hr {
     @apply my-12;
     @apply border-b;
-    @apply border-green-200;
+    @apply border-green-700;
     @apply rounded-full;
 }
 
@@ -104,6 +104,7 @@ li {
 ol,
 ul {
     @apply my-4;
+    @apply list-inside;
 }
 
 ol {

@@ -6,7 +6,7 @@ section: content
 date: 2023-10-06
 ---
 
-## Hydrogen Energy
+# Hydrogen Energy
 
 Hydrogen Energy has emerged as a promising cleaner alternative to fossil fuels. With the growing concerns over climate change and the detrimental impact of fossil fuels, experts are leaning towards hydrogen as a more efficient means to decarbonize various industries.
 
