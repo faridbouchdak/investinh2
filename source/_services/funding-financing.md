@@ -5,7 +5,7 @@ title: Funding & Financing
 date: 2022-08-02
 description: Identify potential sources for your projects
 cover_image: /assets/img/post-cover-image-2.png
-card_image: /assets/images/icon-contract-solid.svg
+card_image: /assets/img/icon-contract-solid.svg
 featured: true
 categories: [services]
 author: Farid Bouchdak

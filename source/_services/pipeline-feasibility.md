@@ -5,7 +5,7 @@ title: Project pipeline & Feasibility Study
 date: 2022-08-01
 description: Selecting the right projects and assessing the practicality of it
 cover_image: /assets/img/post-cover-image-2.png
-card_image: /assets/images/icon-warp-pipe.svg
+card_image: /assets/img/icon-warp-pipe.svg
 featured: true
 categories: [services]
 author: Farid Bouchdak

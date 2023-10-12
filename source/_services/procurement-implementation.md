@@ -5,7 +5,7 @@ title: Procurement & implementation
 date: 2022-08-03
 description: Select the right partner to implement your projects
 cover_image: /assets/img/post-cover-image-2.png
-card_image: /assets/images/icon-wallet.svg
+card_image: /assets/img/icon-wallet.svg
 featured: true
 categories: [services]
 author: Farid Bouchdak
