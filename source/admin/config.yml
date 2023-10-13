@@ -45,6 +45,7 @@ collections:
       - { label: "Name", name: "name", widget: "string", required: true, default: "" }
       - { label: "Expertise", name: "expertise", widget: "string", required: true, default: "" }
       - { label: "Content", name: "body", widget: "markdown", hint: "Your bio goes here." }
+      - { label: "Linked-In", name: "linkedin", widget: "string", required: true, default: "" }
       - label: "Image"
         name: "cover_image"
         widget: "image"

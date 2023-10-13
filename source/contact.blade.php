@@ -12,7 +12,7 @@ We’ll reach out to you shortly in order to set up a meeting that will allow us
 We look forward to hearing from you soon.
 </p>
 
-<form action="/contact" name="contact" class="mb-12" netlify>
+<form action="/contact/succes" name="contact" method="POST" class="mb-12" netlify netlify-honeypot="zeef">
     <div class="flex flex-wrap mb-6 -mx-3">
         <div class="w-full md:w-1/2 mb-6 md:mb-0 px-3">
             <label class="block mb-2 text-gray-800 text-sm font-semibold" for="contact-name">
@@ -102,6 +102,11 @@ We look forward to hearing from you soon.
                 class="block w-full border shadow rounded-lg outline-none mb-2 px-4 py-3"
                 required
             >
+        <p class="hidden">
+            <label>
+                Is this an urgent matter? <input name="zeef" />
+            </label>
+        </p>
     </div>
 
     <div class="flex justify-end w-full">

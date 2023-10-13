@@ -1,9 +1,10 @@
 ---
 name: Farid Bouchdak
-expertise: Getting started with the Jigsaw blog starter template
+expertise: Partner, Project management and contract management expert
 cover_image: /assets/img/post-cover-image-2.png
 extends: _layouts.author
 section: content
 featured: true
+linkedin: https://nl.linkedin.com/in/bouchdak
 ---
-This is a starter template for creating a beautiful, customizable blog with minimal effort. You’ll only have to change a <mark>few settings</mark> and you’re ready to go.<!-- more -->
+Over 21 years of experience with Project structuring, procurement and contract management of infrastructure development for the Netherlands Government. With a focus on Operations and Maintenance phase of Public Private Partnership projects.<!-- more -->

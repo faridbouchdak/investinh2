@@ -17,8 +17,8 @@ We identify potential sources of funding and/or financing, which can include gov
 
 Key Features:
 
-* Funding source identification
-* Financial planning and budgeting
-* Funding application and grant management
-* Public-private partnership (PPP) expertise
-* Loan and bond procurement
+- Funding source identification
+- Financial planning and budgeting
+- Funding application and grant management
+- Public-private partnership (PPP) expertise
+- Loan and bond procurement
