@@ -32,7 +32,7 @@ return [
             'sort' => 'name',
         ],
         'clients' => [
-            'path' => 'client',
+            'path' => 'clients',
             'sort' => 'name',
         ],
         'services' => [
