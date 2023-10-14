@@ -40,7 +40,7 @@
         @stack('meta')
 
         @if ($page->production)
-            <!-- Insert analytics code here -->
+        <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="295754a8-180d-46c0-9e15-be385e2555f8" async></script>
         @endif
 
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
