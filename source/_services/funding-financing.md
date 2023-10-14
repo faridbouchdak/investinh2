@@ -7,8 +7,6 @@ description: Identify potential sources for your projects
 cover_image: /assets/img/post-cover-image-2.png
 card_image: /assets/img/icon-contract-solid.svg
 featured: true
-categories: [services]
-author: Farid Bouchdak
 ---
 
 ### Funding<br/>& Financing

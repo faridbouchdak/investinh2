@@ -3,7 +3,7 @@ extends: _layouts.author
 section: content
 name: Jan van Schoonhoven
 expertise: Partner, Policy and financial expert
-cover_image: /assets/img/post-cover-image-2.png
+cover_image: /assets/img/about.png
 featured: true
 linkedin: https://www.linkedin.com/in/vanschoonhoven/
 ---

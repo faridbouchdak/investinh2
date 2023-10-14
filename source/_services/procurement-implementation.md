@@ -7,8 +7,6 @@ description: Select the right partner to implement your projects
 cover_image: /assets/img/post-cover-image-2.png
 card_image: /assets/img/icon-wallet.svg
 featured: true
-categories: [services]
-author: Farid Bouchdak
 ---
 
 ### Procurement<br/>& implementation

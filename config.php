@@ -31,6 +31,10 @@ return [
             'path' => 'team',
             'sort' => 'name',
         ],
+        'clients' => [
+            'path' => 'client',
+            'sort' => 'name',
+        ],
         'services' => [
             'author' => 'Author Name', // Default author, if not provided in a post
             'sort' => 'date',

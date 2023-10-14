@@ -3,7 +3,7 @@ extends: _layouts.author
 section: content
 name: Andre Wooning
 expertise: Partner, Finance, economics and feasibility expert
-cover_image: /assets/img/post-cover-image-2.png
+cover_image: /assets/img/about.png
 featured: true
 linkedin: https://www.linkedin.com/in/andr%C3%A9-wooning-01b4634/
 ---

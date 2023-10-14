@@ -25,7 +25,7 @@ description: A little bit about the site
                 <div class="w-full md:w-1/2 md:mx-6">
                     <div class="flex flex-col mb-4 rounded overflow-hidden shadow-lg p-6">
                         <figure>
-                            <img src="/assets/img/about.png"
+                            <img src="{{ $teammember->cover_image }}"
                                     alt="Photo of {{ $teammember->name }}"
                                     class="flex rounded-full w-full bg-contain">
                         </figure>

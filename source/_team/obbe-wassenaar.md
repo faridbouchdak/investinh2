@@ -3,7 +3,7 @@ extends: _layouts.author
 section: content
 name: Obbe Wassenaar
 expertise: Partner, Financial and procurement expert with a legal background
-cover_image: /assets/img/post-cover-image-2.png
+cover_image: /assets/img/about.png
 featured: true
 linkedin: https://www.linkedin.com/in/obbe-wassenaar-464914b
 ---
