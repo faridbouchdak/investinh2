@@ -116,7 +116,7 @@ collections:
         multiple: false
         search_fields: ['name']
         value_field: 'name'
-      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", required: true, default: "" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", time_format: false, required: true, default: "" }
       - { label: "Description", name: "description", widget: "string", required: true, default: "" }
       - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
       - label: "Cover image"
@@ -151,7 +151,7 @@ collections:
     preview_path: "/kb/{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true, default: "" }
-      - { label: "Date", name: "date", widget: "hidden", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", required: true, default: "{{year}}-{{month}}-{{day}}" }
+      - { label: "Date", name: "date", widget: "hidden", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", time_format: false, required: true, default: "{{year}}-{{month}}-{{day}}" }
       - { label: "Description", name: "description", widget: "string", required: true, default: "" }
       - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.documentation" }
@@ -197,7 +197,7 @@ collections:
     preview_path: ""
     fields:
       - { label: 'Title', name: 'title', widget: 'string', hint: 'name of the event' }
-      - { label: "Start Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", required: true, default: "" }
+      - { label: "Start Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", dateFormat: "YYYY-MM-DD", time_format: false, required: true, default: "" }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string' }
       - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be visible on the home page?" }
