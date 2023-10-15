@@ -14,7 +14,7 @@
         <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
         <meta property="og:url" content="{{ $page->getUrl() }}" />
         <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
-        <meta property="og:image" content="https://investinh2.com/assets/images/hydrogen_bubble.png" />
+        <meta property="og:image" content="https://investinh2.com/assets/img/hydrogen_bubble.png" />
 
         <meta name="twitter:image:alt" content="{{ $page->siteName }}">
         <meta name="twitter:card" content="summary_large_image">
@@ -22,7 +22,7 @@
         <meta name="twitter:creator" content="@bouchdak">
         <meta name="twitter:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}">
         <meta name="twitter:description" content="{{ $page->description ?? $page->siteDescription }}">
-        <meta name="twitter:image" content="https://investinh2.com/assets/images/hydrogen_bubble.png">
+        <meta name="twitter:image" content="https://investinh2.com/assets/img/hydrogen_bubble.png">
 
         @if ($page->docsearchApiKey && $page->docsearchIndexName)
             <meta name="generator" content="tighten_jigsaw_doc">

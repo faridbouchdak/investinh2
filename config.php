@@ -41,9 +41,12 @@ return [
             'sort' => 'name',
         ],
         'services' => [
-            'author' => 'Author Name', // Default author, if not provided in a post
             'sort' => 'order',
             'path' => 'services/{filename}',
+        ],
+        'events' => [
+            'path' => 'events/{filename}',
+            'sort' => 'date'
         ],
     ],
 
