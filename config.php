@@ -10,6 +10,7 @@ return [
     'siteDescription' => $settings['site_description'],
     'siteAuthor' => $settings['site_author'],
     'siteKeywords' => $settings['keywords'],
+    'hero' => $settings['hero'],
     
     // collections
     'collections' => [

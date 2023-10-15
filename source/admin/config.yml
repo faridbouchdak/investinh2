@@ -12,7 +12,7 @@ public_folder: "assets/img"
 site_url: https://investinh2.com
 display_url: https://investinh2.com
 
-logo_url: "/assets/images/hydrogen_bubble.png"
+logo_url: "/assets/images/investinh2-logo.svg"
 
 local_backend: false
 
@@ -220,6 +220,33 @@ collections:
                   min: 1,
                   max: 10,
                 }
+          - label: 'Hero Settings'
+            name: hero
+            widget: 'object'
+            fields:
+            - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+                media_library:
+                  config:
+                    multiple: false
+              - { label: 'Header', name: 'header', widget: 'string' }
+              - { label: 'Pay-off', name: 'pay_off', widget: 'string' }
+              - { label: 'First message', name: 'first_message', widget: 'string' }
+              - { label: 'Second message', name: 'second_message', widget: string }
+              - label: 'First Button'
+                name: 'first_button'
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Link', name: 'link', widget: 'string' }
+              - label: 'Second Button'
+                name: 'second_button'
+                widget: 'object'
+                fields:
+                  - { label: 'Title', name: 'title', widget: 'string' }
+                  - { label: 'Link', name: 'link', widget: 'string' }
       - name: 'navigation'
         label: 'Navigation'
         file: 'navigation.json'

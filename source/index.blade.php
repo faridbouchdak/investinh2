@@ -19,20 +19,20 @@
 <section class="max-w-6xl mx-auto px-6 py-10 md:py-12">
     <div class="flex flex-col-reverse mb-8 lg:flex-row lg:mb-24">
         <div class="mt-8">
-            <h1>Invest in <span class="text-green-500">green Hydrogen</span> Energy</h1>
+            <h1>{!! $page->hero->header !!}</h1>
 
-            <h2 class="font-light mt-4">{{ $page->siteDescription }}</h2>
+            <h2 class="font-light mt-4">{!! $page->hero->pay_off !!}</h2>
 
-            <p class="text-lg font-bold">Consider us part of your team. <br class="hidden sm:block">We are a small team of highly experienced financial, procurement and project management enthousiasts.</p>
+            <p class="text-lg font-bold">{!! $page->hero->first_message !!} <br class="hidden sm:block">{!! $page->hero->second_message !!}</p>
 
             <div class="flex my-10">
-                <a href="/contact" title="{{ $page->siteName }} Let's talk" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Let's talk</a>
+                <a href="{{ $page->hero->first_button->link }}" title="{{ $page->siteName }} {!! $page->hero->first_button->title !!}" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">{!! $page->hero->first_button->title !!}</a>
 
-                <a href="/kb/what-is-hydrogen-energy" title="H2 explained" class="bg-green-800 hover:bg-green-600 text-green-100 font-normal hover:text-white rounded py-2 px-6">H<sub>2</sub> explained</a>
+                <a href="{{ $page->hero->second_button->link }}" title="{{ $page->hero->second_button->title }}" class="bg-green-800 hover:bg-green-600 text-green-100 font-normal hover:text-white rounded py-2 px-6">{!! $page->hero->second_button->title !!}</a>
             </div>
         </div>
 
-        <img src="/assets/images/hydrogen_bubble.png" alt="{{ $page->siteName }} large logo" class="mx-auto max-w-sm">
+        <img src="{{ $page->hero->image }}" alt="{{ $page->siteName }} image of a large bubble with the letters H2 in it" class="mx-auto max-w-sm">
     </div>
 
     <hr class="block my-8 border lg:hidden">

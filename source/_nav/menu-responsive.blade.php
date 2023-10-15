@@ -1,25 +1,15 @@
 <nav id="js-nav-menu" class="w-auto px-2 pt-6 pb-2 bg-gray-200 shadow hidden lg:hidden">
-    <ul class="my-0">
+    <ul class="my-0 list-none">
+        @php
+            $items = $page->navigation->top_nav
+        @endphp
+        @foreach ($items as $label => $item)
         <li class="pl-4">
-            <a
-                title="{{ $page->siteName }} Blog"
-                href="/blog"
-                class="block mt-0 mb-4 text-sm no-underline {{ $page->isActive('/blog') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
-            >Blog</a>
+            <a title="{{ $page->siteName }} {{ $label }}" href="{{ $item }}"
+                class="ml-6 hover:text-blue-600 {{ $page->isActive($item) ? 'active text-blue-600' : 'text-green-800' }}">
+                {{ $label }}
+            </a>
         </li>
-        <li class="pl-4">
-            <a
-                title="{{ $page->siteName }} About"
-                href="/about"
-                class="block mt-0 mb-4 text-sm no-underline {{ $page->isActive('/about') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
-            >About</a>
-        </li>
-        <li class="pl-4">
-            <a
-                title="{{ $page->siteName }} Contact"
-                href="/contact"
-                class="block mt-0 mb-4 text-sm no-underline {{ $page->isActive('/contact') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
-            >Contact</a>
-        </li>
+        @endforeach
     </ul>
 </nav>

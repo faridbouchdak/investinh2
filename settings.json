@@ -8,5 +8,20 @@
   },
   "docs": {
     "limit": 4
+  },
+  "hero": {
+    "image": "/assets/img/hydrogen_bubble.png",
+    "header": "Invest in <span class=\"text-green-500\">green Hydrogen</span> Energy",
+    "pay_off": "We Drive Sustainable Change: Unlocking a Cleaner, Brighter Tomorrow.",
+    "first_message": "Consider us part of your team.",
+    "second_message": "We are a small team of highly experienced financial, procurement and project management enthousiasts.",
+    "first_button": {
+      "title": "Let's talk",
+      "link": "/contact"
+    },
+    "second_button": {
+      "title": "H<sub>2</sub> explained",
+      "link": "/kb/what-is-hydrogen-energy"
+    }
   }
 }
