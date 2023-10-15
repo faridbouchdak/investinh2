@@ -26,13 +26,13 @@
             <p class="text-lg font-bold">{!! $page->hero->first_message !!} <br class="hidden sm:block">{!! $page->hero->second_message !!}</p>
 
             <div class="flex my-10">
-                <a href="{{ $page->hero->first_button->link }}" title="{{ $page->siteName }} {!! $page->hero->first_button->title !!}" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">{!! $page->hero->first_button->title !!}</a>
+                <a href="{{ $page->hero->first_button->link }}" title="{{ $page->siteName }}: {!! $page->hero->first_button->title !!}" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">{!! $page->hero->first_button->title !!}</a>
 
                 <a href="{{ $page->hero->second_button->link }}" title="{{ $page->hero->second_button->title }}" class="bg-green-800 hover:bg-green-600 text-green-100 font-normal hover:text-white rounded py-2 px-6">{!! $page->hero->second_button->title !!}</a>
             </div>
         </div>
 
-        <img src="{{ $page->hero->image }}" alt="{{ $page->siteName }} image of a large bubble with the letters H2 in it" class="mx-auto max-w-sm">
+        <img src="{{ $page->hero->image->link }}" alt="{{ $page->siteName }}: {{ $page->hero->image->alt }}" class="mx-auto max-w-sm">
     </div>
 
     <hr class="block my-8 border lg:hidden">

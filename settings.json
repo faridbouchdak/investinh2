@@ -10,7 +10,10 @@
     "limit": 4
   },
   "hero": {
-    "image": "/assets/img/hydrogen_bubble.png",
+    "image": {
+      "link": "/assets/img/hydrogen_bubble.png",
+      "alt": "image of a large bubble with the letters H2 in it"
+    },
     "header": "Invest in <span class=\"text-green-500\">green Hydrogen</span> Energy",
     "pay_off": "We Drive Sustainable Change: Unlocking a Cleaner, Brighter Tomorrow.",
     "first_message": "Consider us part of your team.",

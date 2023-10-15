@@ -224,13 +224,18 @@ collections:
             name: hero
             widget: 'object'
             fields:
-            - label: "Image"
+              - label: 'Image'
                 name: "image"
-                widget: "image"
-                required: false
-                media_library:
-                  config:
-                    multiple: false
+                widget: 'object'
+                fields:
+                  - label: "Link"
+                    name: "link"
+                    widget: "image"
+                    required: false
+                    media_library:
+                      config:
+                        multiple: false
+                  - { label: 'Alt', name: 'alt', widget: 'string' }
               - { label: 'Header', name: 'header', widget: 'string' }
               - { label: 'Pay-off', name: 'pay_off', widget: 'string' }
               - { label: 'First message', name: 'first_message', widget: 'string' }
