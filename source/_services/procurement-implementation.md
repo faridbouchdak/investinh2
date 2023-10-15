@@ -2,7 +2,7 @@
 extends: _layouts.page
 section: content
 title: Procurement & implementation
-date: 2022-08-03
+order: 3
 description: Select the right partner to implement your projects
 cover_image: /assets/img/post-cover-image-2.png
 card_image: /assets/img/icon-wallet.svg

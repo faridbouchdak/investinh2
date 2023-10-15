@@ -2,7 +2,7 @@
 extends: _layouts.page
 section: content
 title: Funding & Financing
-date: 2022-08-02
+order: 2
 description: Identify potential sources for your projects
 cover_image: /assets/img/post-cover-image-2.png
 card_image: /assets/img/icon-contract-solid.svg

@@ -2,7 +2,7 @@
 extends: _layouts.page
 section: content
 title: Project pipeline & Feasibility Study
-date: 2022-08-01
+order: 1
 description: Selecting the right projects and assessing the practicality of it
 cover_image: /assets/img/post-cover-image-2.png
 card_image: /assets/img/icon-warp-pipe.svg

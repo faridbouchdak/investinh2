@@ -1,23 +1,27 @@
 <?php
 
 use Illuminate\Support\Str;
+$settings = json_decode(file_get_contents('settings.json'), true);
 
 return [
     'baseUrl' => '',
     'production' => false,
-    'siteName' => 'Invest in H2',
-    'siteDescription' => 'We Drive Sustainable Change: Unlocking a Cleaner, Brighter Tomorrow.',
-    'siteAuthor' => 'Farid Bouchdak',
-
+    'siteName' => $settings['site_name'],
+    'siteDescription' => $settings['site_description'],
+    'siteAuthor' => $settings['site_author'],
+    'siteKeywords' => $settings['keywords'],
+    
     // collections
     'collections' => [
         'posts' => [
             'author' => 'Author Name', // Default author, if not provided in a post
             'sort' => '-date',
             'path' => 'blog/{filename}',
+            'perPage' => $settings['posts']['limit'],
         ],
         'docs' => [
             'path' => 'kb/{filename}',
+            'perPage' => $settings['docs']['limit'],
         ],
         'categories' => [
             'path' => '/blog/categories/{filename}',
@@ -37,7 +41,7 @@ return [
         ],
         'services' => [
             'author' => 'Author Name', // Default author, if not provided in a post
-            'sort' => 'date',
+            'sort' => 'order',
             'path' => 'services/{filename}',
         ],
     ],

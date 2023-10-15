@@ -1,7 +1,12 @@
 {
+  "site_name": "Invest in H2",
+  "site_description": "We Drive Sustainable Change: Unlocking a Cleaner, Brighter Tomorrow.",
+  "keywords": "Hydrogen Energy, green Hydrogen, clean Hydrogen, h2",
+  "site_author": "Farid Bouchdak",
   "posts": {
-    "front_limit": 5,
-    "author": "Farid"
+    "limit": 4
   },
-  "site_title": "test"
+  "docs": {
+    "limit": 4
+  }
 }

@@ -3,7 +3,6 @@ title: Knowlegde Base
 description: The list of articles for the site
 pagination:
     collection: docs
-    perPage: 4
 ---
 @extends('_layouts.main')
 
