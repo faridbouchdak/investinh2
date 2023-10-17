@@ -11,7 +11,7 @@
             <p class="text-sm leading-6 text-gray-900">
                 <strong class="font-semibold">{{ $featuredEvent->title }}</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>{{ $featuredEvent->description }}
             </p>
-            <a href="{{ $featuredEvent->link }}" class="rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 hover:text-white">Register now <span aria-hidden="true">&rarr;</span></a>
+            <a href="{{ $featuredEvent->link }}" class="rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 hover:text-white">Register now</a>
             <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
                 <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
             </div>
@@ -35,8 +35,9 @@
                 <a href="{{ $page->hero->second_button->link }}" title="{{ $page->hero->second_button->title }}" class="bg-green-800 hover:bg-green-600 text-green-100 font-normal hover:text-white rounded py-2 px-6">{!! $page->hero->second_button->title !!}</a>
             </div>
         </div>
-
-        <img src="{{ $page->hero->image->link }}" alt="{{ $page->siteName }}: {{ $page->hero->image->alt }}" class="mx-auto max-w-sm">
+        <figure class="">
+            <img src="{{ $page->hero->image->link }}" alt="{{ $page->siteName }}: {{ $page->hero->image->alt }}" class="my-auto">
+        </figure>
     </div>
 
     <hr class="block my-8 border lg:hidden">
@@ -83,7 +84,7 @@
             <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
 
             <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase tracking-wide mb-4">
-                Read more &rarr;
+                Read more
             </a>
         </div>
 

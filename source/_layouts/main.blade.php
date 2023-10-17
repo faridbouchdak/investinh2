@@ -114,7 +114,7 @@
                     </p>
                     <div class="lg:mt-0 lg:flex-shrink-0">
                         <div class="mt-12 inline-flex rounded-md">
-                            <a href="/contact" title="{{ $page->siteName }} getting started" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Contact us &rarr;</a>
+                            <a href="/contact" title="{{ $page->siteName }} getting started" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Contact us</a>
                         </div>
                     </div>
                 </div>
