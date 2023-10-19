@@ -10,9 +10,9 @@
         <img src="{{ $page->cover_image }}" alt="{{ $page->name }} cover image" class="mb-2 rounded shadow-md">
     @endif
 
-    <h1 class="leading-none mb-2">{{ $page->name }}</h1>
+    <h1 class="leading-none mb-2">{{ $page->title }}</h1>
 
-    <a href="{{ $page->link }}" alt="link to website of {{ $page->name }}">Website</a>
+    <a href="{{ $page->link }}" alt="link to website of {{ $page->title }}">Website</a>
 
     <div class="border-b border-green-700 mb-10 pb-4" v-pre>
         @yield('content')
@@ -21,16 +21,16 @@
     <nav class="flex justify-between text-sm md:text-base">
         <div>
             @if ($next = $page->getNext())
-                <a href="{{ $next->getUrl() }}" title="{{ $next->name }}">
-                    &LeftArrow; {{ $next->name }}
+                <a href="{{ $next->getUrl() }}" title="{{ $next->title }}">
+                    &LeftArrow; {{ $next->title }}
                 </a>
             @endif
         </div>
 
         <div>
             @if ($previous = $page->getPrevious())
-                <a href="{{ $previous->getUrl() }}" title="{{ $previous->name }}">
-                    {{ $previous->name }} &RightArrow;
+                <a href="{{ $previous->getUrl() }}" title="{{ $previous->title }}">
+                    {{ $previous->title }} &RightArrow;
                 </a>
             @endif
         </div>

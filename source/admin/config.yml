@@ -17,86 +17,8 @@ logo_url: "/assets/images/investinh2-logo.svg"
 local_backend: false
 
 collections:
-  - name: 'categories'
-    label: 'Categories (blog)'
-    label_singular: 'Category'
-    description: 'Categories for the posts'
-    folder: 'source/_categories'
-    slug: "{{slug}}"
-    extension: "md"
-    create: true
-    identifier_field: "title"
-    editor:
-      preview: false
-    preview_path: "/blog/categories/{{slug}}"
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string', hint: 'feature or configuration' }
-      - { label: 'Description', name: 'description', widget: 'markdown' }
-
-  - name: 'authors'
-    label: 'Authors'
-    label_singular: 'Author'
-    description: 'Authors: for the content of the site and team section of the about-page'
-    folder: 'source/_team'
-    slug: "{{slug}}"
-    extension: "md"
-    format: "yaml-frontmatter"
-    create: true
-    identifier_field: "name"
-    preview_path: ""
-    fields:
-      - label: "Image"
-        name: "cover_image"
-        widget: "image"
-        required: false
-        media_library:
-          config:
-            multiple: false
-      - { label: "Name", name: "name", widget: "string", required: true, default: "" }
-      - { label: "Expertise", name: "expertise", widget: "string", required: true, default: "" }
-      - { label: "Content", name: "body", widget: "markdown", hint: "Your bio goes here." }
-      - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be visible on the about page?" }
-      - { label: "Linked-In", name: "linkedin", widget: "string", required: true, default: "" }
-      - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
-      - { name: "section", widget: "hidden", required: true, default: "content" }
-
-  - name: "services"
-    label: "Services"
-    label_singular: "Service"
-    description: >
-      All your services
-    folder: "source/_services"
-    slug: "{{slug}}"
-    extension: "md"
-    format: "yaml-frontmatter"
-    create: true
-    identifier_field: "title"
-    preview_path: "/services/{{slug}}"
-    fields:
-      - label: "Cover image"
-        name: "cover_image"
-        widget: "image"
-        required: false
-        media_library:
-          config:
-            multiple: false
-      - label: "Card image (for frontpage)"
-        name: "card_image"
-        widget: "image"
-        required: false
-        media_library:
-          config:
-            multiple: false
-      - { label: "Title", name: "title", widget: "string", required: true, default: "" }
-      - { label: "Order", name: "order", widget: "number", default: "1", value_type: "int", min: 1, max: 5, step: 1, required: false }
-      - { label: "Description", name: "description", widget: "string", required: true, default: "" }
-      - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
-      - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be visible on the home page?" }
-      - { name: "extends", widget: "hidden", required: true, default: "_layouts.page" }
-      - { name: "section", widget: "hidden", required: true, default: "content" }
-
   - name: "posts"
-    label: "Blog Posts"
+    label: "💌 Blog Posts"
     label_singular: "Post"
     description: >
       All Blog Posts
@@ -137,8 +59,24 @@ collections:
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
       - { name: "section", widget: "hidden", required: true, default: "content" }
 
+  - name: 'categories'
+    label: '📥 Categories (blog posts)'
+    label_singular: 'Category'
+    description: 'Categories for the posts'
+    folder: 'source/_categories'
+    slug: "{{slug}}"
+    extension: "md"
+    create: true
+    identifier_field: "title"
+    editor:
+      preview: false
+    preview_path: "/blog/categories/{{slug}}"
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', hint: 'feature or configuration' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+
   - name: "kb"
-    label: "Knowledge Base"
+    label: "📚 Knowledge Base"
     label_singular: "Document"
     description: >
       All Documents
@@ -156,9 +94,9 @@ collections:
       - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.documentation" }
       - { name: "section", widget: "hidden", required: true, default: "content" }
-  
+
   - name: 'clients'
-    label: 'Clients'
+    label: '👥 Clients'
     label_singular: 'Client'
     description: 'Clients: for the thrusted by section of the index-page and (recent) work content'
     folder: 'source/_clients'
@@ -183,6 +121,39 @@ collections:
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.client" }
       - { name: "section", widget: "hidden", required: true, default: "content" }
 
+  - name: 'work'
+    label: '🏗️ Projects'
+    label_singular: 'Project'
+    description: 'Recent work: Add projects to your site'
+    folder: 'source/_work'
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    create: true
+    identifier_field: "title"
+    preview_path: ""
+    fields:
+      - label: "Cover image"
+        name: "cover_image"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - label: "Client"
+        name: "client"
+        widget: "relation"
+        collection: 'clients'
+        multiple: false
+        search_fields: ['name']
+        value_field: 'name'
+      - { label: "Title", name: "title", widget: "string", required: true, default: "" }
+      - { label: "Content", name: "body", widget: "markdown", hint: "Short description of the project." }
+      - { label: "Link", name: "link", widget: "string", required: false, default: "https://" }
+      - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be visible on the home page?" }
+      - { name: "extends", widget: "hidden", required: true, default: "_layouts.work" }
+      - { name: "section", widget: "hidden", required: true, default: "content" }
+
   - name: 'events'
     label: '📅 Events'
     label_singular: 'Event'
@@ -201,6 +172,68 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Link', name: 'link', widget: 'string' }
       - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be visible on the home page?" }
+
+  - name: 'authors'
+    label: '✍🏼 Authors'
+    label_singular: 'Author'
+    description: 'Authors: for the content of the site and team section of the about-page'
+    folder: 'source/_team'
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    create: true
+    identifier_field: "name"
+    preview_path: ""
+    fields:
+      - label: "Image"
+        name: "cover_image"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - { label: "Name", name: "name", widget: "string", required: true, default: "" }
+      - { label: "Expertise", name: "expertise", widget: "string", required: true, default: "" }
+      - { label: "Content", name: "body", widget: "markdown", hint: "Your bio goes here." }
+      - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be visible on the about page?" }
+      - { label: "Linked-In", name: "linkedin", widget: "string", required: true, default: "" }
+      - { name: "extends", widget: "hidden", required: true, default: "_layouts.post" }
+      - { name: "section", widget: "hidden", required: true, default: "content" }
+
+  - name: "services"
+    label: "➕ Services"
+    label_singular: "Service"
+    description: >
+      All your services
+    folder: "source/_services"
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    create: true
+    identifier_field: "title"
+    preview_path: "/services/{{slug}}"
+    fields:
+      - label: "Cover image"
+        name: "cover_image"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - label: "Card image (for frontpage)"
+        name: "card_image"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - { label: "Title", name: "title", widget: "string", required: true, default: "" }
+      - { label: "Order", name: "order", widget: "number", default: "1", value_type: "int", min: 1, max: 5, step: 1, required: false }
+      - { label: "Description", name: "description", widget: "string", required: true, default: "" }
+      - { label: "Content", name: "body", widget: "markdown", hint: "Main content goes here." }
+      - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be visible on the home page?" }
+      - { name: "extends", widget: "hidden", required: true, default: "_layouts.page" }
+      - { name: "section", widget: "hidden", required: true, default: "content" }
 
   - name: 'settings'
     label: '⚙️ Settings'
