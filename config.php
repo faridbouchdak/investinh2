@@ -33,12 +33,16 @@ return [
             },
         ],
         'team' => [
-            'path' => 'team',
+            'path' => 'team/{filename}',
             'sort' => 'name',
         ],
         'clients' => [
-            'path' => 'clients',
+            'path' => 'clients/{filename}',
             'sort' => 'name',
+        ],
+        'work' => [
+            'path' => 'work/{filename}',
+            'sort' => 'title',
         ],
         'services' => [
             'sort' => 'order',
