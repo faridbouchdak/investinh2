@@ -184,7 +184,7 @@ collections:
       - { name: "section", widget: "hidden", required: true, default: "content" }
 
   - name: 'events'
-    label: 'Events'
+    label: '📅 Events'
     label_singular: 'Event'
     description: 'Important events that your visitors should know about'
     folder: 'source/_events'
@@ -203,7 +203,7 @@ collections:
       - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Should it be visible on the home page?" }
 
   - name: 'settings'
-    label: 'Settings'
+    label: '⚙️ Settings'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false

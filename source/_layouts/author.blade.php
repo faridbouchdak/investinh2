@@ -16,9 +16,8 @@
 
     <div class="border-b border-green-700 mb-10 pb-4" v-pre>
         @yield('content')
+        <p class=""><a href="{{ $page->linkedin }}" alt="link to linkedin-profile of {{ $page->name }}">Visit LinkedIn-profile</a></p>
     </div>
-
-    <a href="{{ $page->linkedin }}" alt="link to linkedin-profile of {{ $page->name }}">Linked-In</a>
     
     <nav class="flex justify-between text-sm md:text-base">
         <div>
