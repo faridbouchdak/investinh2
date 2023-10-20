@@ -7,6 +7,13 @@ foreach ($nav as $menu) {
     $links = array();
     foreach ($menu['links'] as $link) {
         $links[$link['link_title']] = $link['link_url'];
+        if (array_key_exists('children', $link)) {
+            $links[$link['link_title']] = array('url' => $link['link_url']);
+            foreach ($link['children'] as $sublink) {
+                $children[$sublink['link_title']] = $sublink['link_url'];
+            }
+            $links[$link['link_title']]['children'] = $children;
+        }
     }
     $navigation[$menu['menu_title']]=$links;
 }
