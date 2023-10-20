@@ -22,7 +22,13 @@
       "links": [
         {
           "link_title": "Hydrogen Energy",
-          "link_url": "/kb/what-is-hydrogen-energy/"
+          "link_url": "/kb/what-is-hydrogen-energy/",
+          "children": [
+            {
+              "link_title": "Government support (G20)",
+              "link_url": "/kb/g20-principles-on-hydrogen/"
+            }
+          ]
         },
         {
           "link_title": "Government support (G20)",
