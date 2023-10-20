@@ -5,7 +5,7 @@ a[href]:not(:where(
   /* exclude relative but not double slash only links */
   [href^="/"]:not([href^="//"]),
   /* domains to exclude */
-  /* [href*="//stackoverflow.com"], */
+  [href*="//investinh2.com"],
   /* subdomains to exclude */
   /* [href*="//meta.stackoverflow.com"], */
 )):after {

@@ -39,9 +39,11 @@
             <img src="{{ $page->hero->image->link }}" alt="{{ $page->siteName }}: {{ $page->hero->image->alt }}" class="my-auto">
         </figure>
     </div>
+</section>
 
-    <hr class="block my-8 border lg:hidden">
+<hr class="block my-8 border lg:hidden">
 
+<section class="max-w-6xl mx-auto px-6 py-10 md:py-12">
     <h2>Our services</h2>
     <div class="md:flex -mx-2 -mx-4">
         @foreach ($services->where('featured', true) as $featuredService)

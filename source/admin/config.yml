@@ -21,7 +21,7 @@ collections:
     label: "💌 Blog Posts"
     label_singular: "Post"
     description: >
-      All Blog Posts
+      All Blog Posts for your site
     folder: "source/_posts"
     slug: "{{slug}}"
     extension: "md"
@@ -79,7 +79,7 @@ collections:
     label: "📚 Knowledge Base"
     label_singular: "Document"
     description: >
-      All Documents
+      All articles you want to share with the world 
     folder: "source/_docs"
     slug: "{{slug}}"
     extension: "md"
@@ -98,7 +98,7 @@ collections:
   - name: 'clients'
     label: '👥 Clients'
     label_singular: 'Client'
-    description: 'Clients: for the thrusted by section of the index-page and (recent) work content'
+    description: 'For the "thrusted by"-section of the index-page and (recent) work / projects'
     folder: 'source/_clients'
     slug: "{{slug}}"
     extension: "md"
@@ -176,7 +176,7 @@ collections:
   - name: 'authors'
     label: '✍🏼 Authors'
     label_singular: 'Author'
-    description: 'Authors: for the content of the site and team section of the about-page'
+    description: 'For the content of the site and team section of the about-page'
     folder: 'source/_team'
     slug: "{{slug}}"
     extension: "md"
@@ -204,7 +204,7 @@ collections:
     label: "➕ Services"
     label_singular: "Service"
     description: >
-      All your services
+      All the services you offer to your clients
     folder: "source/_services"
     slug: "{{slug}}"
     extension: "md"
@@ -327,3 +327,11 @@ collections:
                 fields:
                   - { label: 'Link title', name: link_title, widget: string, default: "Contact us" }
                   - { label: 'Link URL', name: link_url, widget: string, default: "/contact" }
+                  - label: 'SubLinks'
+                    label_singular: "Sublink"
+                    name: 'children'
+                    widget: 'list'
+                    allow_add: true
+                    fields:
+                      - { label: 'Link title', name: link_title, widget: string, default: "Contact us" }
+                      - { label: 'Link URL', name: link_url, widget: string, default: "/contact" }
