@@ -154,6 +154,31 @@ collections:
       - { name: "extends", widget: "hidden", required: true, default: "_layouts.work" }
       - { name: "section", widget: "hidden", required: true, default: "content" }
 
+  - name: 'testimonials'
+    label: '🫶🏼 Testimonials'
+    label_singular: 'Testimonial'
+    description: 'use customer testimonials on your website to provide social proof by way of demonstrating success'
+    folder: 'source/_testimonials'
+    slug: "{{slug}}"
+    extension: "md"
+    create: true
+    identifier_field: "name"
+    editor:
+      preview: false
+    preview_path: ""
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string', hint: 'name of this CTA (for your template)' }
+      - label: "Cover image"
+        name: "cover_image"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - { label: 'Message', name: 'message', widget: 'markdown' }
+      - { label: 'Button', name: 'button_title', widget: 'string' }
+      - { label: 'Link', name: 'button_link', widget: 'string' }
+
   - name: 'events'
     label: '📅 Events'
     label_singular: 'Event'
