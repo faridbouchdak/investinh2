@@ -52,6 +52,7 @@ return [
             'path' => 'events/{filename}',
             'sort' => 'date'
         ],
+        'cta',
     ],
 
     // Algolia DocSearch credentials
