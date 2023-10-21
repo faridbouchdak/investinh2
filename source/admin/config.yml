@@ -335,3 +335,28 @@ collections:
                     fields:
                       - { label: 'Link title', name: link_title, widget: string, default: "Contact us" }
                       - { label: 'Link URL', name: link_url, widget: string, default: "/contact" }
+      - name: 'cta'
+        label: '👆🏼 Call To Actions (CTA)'
+        label_singular: 'Call To Action'
+        description: 'Define the next step you want your reader to take'
+        folder: 'source/_cta'
+        slug: "{{slug}}"
+        extension: "md"
+        create: true
+        identifier_field: "name"
+        editor:
+          preview: false
+        preview_path: ""
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string', hint: 'name of this CTA (for your template)' }
+          - { label: 'Title', name: 'title', widget: 'string', hint: 'attention grabbing title' }
+          - label: "Cover image"
+            name: "cover_image"
+            widget: "image"
+            required: false
+            media_library:
+              config:
+                multiple: false
+          - { label: 'Message', name: 'message', widget: 'markdown' }
+          - { label: 'Button', name: 'button_title', widget: 'string' }
+          - { label: 'Link', name: 'button_link', widget: 'string' }

@@ -85,44 +85,14 @@
 
         <footer class="bg-white text-sm mt-12 py-4" role="contentinfo">
 
-            @if (count($clients)>0)
-            <section class="container mx-auto px-4 lg:px-8 mt-6">
-                <h3>Thrusted by</h3>
-                <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5 mb-10">
-                @foreach ($clients->where('featured', true) as $featuredClient)
-                    <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
-                        @if ($featuredClient->cover_image)
-                            <img src="{{ $featuredClient->cover_image }}" alt="{{ $featuredClient->name }} cover image" class="h-12 text-gray-500 fill-current dark:text-gray-300" title="{{ $featuredClient->name }}">
-                        @endif
-                    </div>
-                @endforeach
-                </div>
-            </section>
+            @if (count($clients->where('featured', true))>0)
+                @include('_components.trustedby')
             @endif
 
             <hr class="block my-8 border lg:hidden">
 
-            <div class="bg-white dark:bg-gray-800 relative container mx-auto px-4 lg:px-8">
-                <div class="text-start w-full lg:w-1/2 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-                    <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
-                        <span class="block">
-                            How can we
-                        </span>
-                        <span class="block text-green-500">
-                            serve you?
-                        </span>
-                    </h2>
-                    <p class="text-xl mt-4 text-gray-400">
-                        If you think we’d be a good fit for your next project,<br/>please reach out and inquire with us.<br/>We look forward to hearing from you soon.
-                    </p>
-                    <div class="lg:mt-0 lg:flex-shrink-0">
-                        <div class="mt-12 inline-flex rounded-md">
-                            <a href="/contact" title="{{ $page->siteName }} getting started" class="bg-blue-500 hover:bg-blue-600 font-normal text-white hover:text-white rounded mr-4 py-2 px-6">Contact us</a>
-                        </div>
-                    </div>
-                </div>
-                <img src="/assets/img/about.png" class="absolute top-0 right-0 hidden h-full max-w-1/2 lg:block"/>
-            </div>
+            @include('_components.cta-large', array('cta'=>$cta['cta-footer']))
+
             <ul class="flex justify-center flex-col md:flex-row list-none mt-8">
                 <li class="md:mr-2">
                     &copy; <a href="/" title="Invest in H2 website">Invest in H<sub>2</sub></a> {{ date('Y') }}.
