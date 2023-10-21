@@ -1,0 +1,10 @@
+Sitemap: https://investinh2.com/sitemap.xml
+
+User-agent: * # pas beschikbaar maken als properties beschikbaar zijn.
+Disallow: /assets/*
+Disallow: */favicon.ico
+Disallow: */404*
+Disallow: /blog/feed.atom
+Disallow: /blog/categories/*
+Disallow: /admin
+Disallow: /admin/*
