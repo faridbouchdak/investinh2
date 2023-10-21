@@ -6,7 +6,7 @@ environment = { PHP_VERSION = "8.1" }
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Robots-Tag = index
+    X-Robots-Tag = "index"
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
 
