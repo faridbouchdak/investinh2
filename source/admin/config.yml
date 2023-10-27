@@ -90,8 +90,8 @@ collections:
       - label: Template
         name: template
         widget: select
-        default: page
-        options: ['page', 'post', 'about', 'contact']
+        default: "_layouts.page"
+        options: ['_layouts.page', '_layouts.post', '_layouts.about', '_layouts.contact']
       - label: Title
         name: title
         widget: string
