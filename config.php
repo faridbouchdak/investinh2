@@ -14,16 +14,6 @@ return [
     
     // collections
     'collections' => [
-        'posts' => [
-            'author' => 'Author Name', // Default author, if not provided in a post
-            'sort' => '-date',
-            'path' => 'blog/{filename}',
-            'perPage' => $settings['posts']['limit'],
-        ],
-        'docs' => [
-            'path' => 'kb/{filename}',
-            'perPage' => $settings['docs']['limit'],
-        ],
         'categories' => [
             'path' => '/blog/categories/{filename}',
             'posts' => function ($page, $allPosts) {
@@ -32,27 +22,41 @@ return [
                 });
             },
         ],
-        'team' => [
-            'path' => 'team/{filename}',
-            'sort' => 'name',
-        ],
         'clients' => [
             'path' => 'clients/{filename}',
             'sort' => 'name',
         ],
-        'work' => [
-            'path' => 'work/{filename}',
-            'sort' => 'title',
-        ],
-        'services' => [
-            'sort' => 'order',
-            'path' => 'services/{filename}',
+        'cta',
+        'docs' => [
+            'path' => 'kb/{filename}',
+            'perPage' => $settings['docs']['limit'],
         ],
         'events' => [
             'path' => 'events/{filename}',
             'sort' => 'date'
         ],
-        'cta',
+        'faqs',
+        'pages',
+        'posts' => [
+            'author' => 'Author Name', // Default author, if not provided in a post
+            'sort' => '-date',
+            'path' => 'blog/{filename}',
+            'perPage' => $settings['posts']['limit'],
+        ],
+        'services' => [
+            'sort' => 'order',
+            'path' => 'services/{filename}',
+        ],
+        'team' => [
+            'path' => 'team/{filename}',
+            'sort' => 'name',
+        ],
+        'testimonials',
+        'work' => [
+            'path' => 'work/{filename}',
+            'sort' => 'title',
+        ],
+
     ],
 
     // Algolia DocSearch credentials

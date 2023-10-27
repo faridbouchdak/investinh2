@@ -12,5 +12,4 @@ description: Your form submission has been received.
         &larr; Back to our homepage
     </a>
 </p>
-
 @stop
