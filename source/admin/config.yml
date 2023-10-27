@@ -88,16 +88,16 @@ collections:
     fields:
       - label: Template
         name: template
-        widget: hidden
+        widget: select
         default: page
+        options: ['page', 'post', 'about', 'contact']
       - label: Title
         name: title
         widget: string
-      - label: Draft
-        name: draft
-        widget: boolean
-        default: true
-      - label: Body
+      - label: Description
+        name: description
+        widget: string
+      - label: 'Content'
         name: body
         widget: markdown
 
@@ -207,6 +207,7 @@ collections:
 
   - name: 'faq' # Used in routes, ie.: /admin/collections/:slug/edit
     label: '❓ FAQ' # Used in the UI
+    label_singular: 'FAQ'
     folder: '_faqs'
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
