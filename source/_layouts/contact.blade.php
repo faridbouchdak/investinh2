@@ -1,16 +1,8 @@
----
-title: Contact
-description: Get in touch with us
----
 @extends('_layouts.main')
 
 @section('body')
-<h1>Contact</h1>
 
-<p class="mb-8">Collaboration starts here. If you think we’d be a good fit for your next project please inquire with us by filling out the form.<br/>
-We’ll reach out to you shortly in order to set up a meeting that will allow us to learn more about one another.</br>
-We look forward to hearing from you soon.
-</p>
+@yield('content')
 
 <form action="/contact/succes" name="contact" method="POST" class="mb-12" netlify netlify-honeypot="zeef">
     <div class="flex flex-wrap mb-6 -mx-3">

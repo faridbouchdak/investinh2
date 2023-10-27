@@ -36,9 +36,11 @@ return [
             'sort' => 'date'
         ],
         'faqs',
-        'pages',
+        'pages' => [
+            'path' => '/{filename}',
+        ],
         'posts' => [
-            'author' => 'Author Name', // Default author, if not provided in a post
+            'author' => $settings['site_author'], // Default author, if not provided in a post
             'sort' => '-date',
             'path' => 'blog/{filename}',
             'perPage' => $settings['posts']['limit'],

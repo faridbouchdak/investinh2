@@ -4,6 +4,7 @@ description: A little bit about the site
 extends: _layouts.about
 section: content
 ---
+
 # About us
 
 <img src="/assets/img/about.png"
