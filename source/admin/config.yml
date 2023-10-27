@@ -78,7 +78,8 @@ collections:
   - name: "pages" # a nested collection
     label: "📄 Pages"
     label_singular: "Page"
-    folder: _pages
+    description: 'Pages for your website'
+    folder: "source/_pages"
     slug: "{{slug}}"
     extension: "md"
     format: "yaml-frontmatter"
@@ -208,6 +209,7 @@ collections:
   - name: 'faq' # Used in routes, ie.: /admin/collections/:slug/edit
     label: '❓ FAQ' # Used in the UI
     label_singular: 'FAQ'
+    description: 'FAQ for your website'
     folder: '_faqs'
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
