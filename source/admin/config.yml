@@ -75,12 +75,16 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', hint: 'feature or configuration' }
       - { label: 'Description', name: 'description', widget: 'markdown' }
 
-  - name: pages # a nested collection
-    label: Pages
-    label_singular: 'Page'
+  - name: "pages" # a nested collection
+    label: "📄 Pages"
+    label_singular: "Page"
     folder: _pages
-    create: true
     slug: "{{slug}}"
+    extension: "md"
+    format: "yaml-frontmatter"
+    create: true
+    identifier_field: "title"
+    preview_path: "/{{slug}}"
     fields:
       - label: Template
         name: template
