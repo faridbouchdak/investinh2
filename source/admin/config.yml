@@ -88,7 +88,7 @@ collections:
     preview_path: "/{{slug}}"
     fields:
       - label: Template
-        name: template
+        name: extends
         widget: select
         default: "_layouts.page"
         options: ['_layouts.page', '_layouts.post', '_layouts.about', '_layouts.contact']
