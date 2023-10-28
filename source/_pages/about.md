@@ -18,3 +18,11 @@ section: content
 <p class="mb-6"><strong>what we can do for you:</strong> We're a company of four because we believe the best results come from a direct partnership with clients.</p>
 <p class="mb-6">In other words, we do the work and we maintain the relationship. No sales reps, no account execs, no big guns trying to represent the work of someone else. Simply a couple of co-owners – 1 financial and procurement expert, 1 project and contract management expert, 1 project management and feasibility expert, 1 policy and financial expert – motivated to listen and serve.</p>
 <p class="mb-6">If you think we’d be a good fit for your next project, please reach out and <a href="/contact">inquire with us</a>. We look forward to hearing from you soon.</p>
+
+<!-- Wij zijn een team van gepassioneerde individuen die zich inzetten om via ons werk een positieve impact op de wereld te maken. Samen streven we ernaar de publieke sector te helpen haar doelstellingen op het gebied van de energietransitie te verwezenlijken en een duurzame toekomst voor de komende generaties te creëren. Onze reis begon met een onwrikbaar geloof in de kracht van hernieuwbare energie en onze gedeelde missie om de klimaatverandering te bestrijden.
+
+Elke dag worden we wakker gedreven door een collectief gevoel van doelgerichtheid en een diepgeworteld verlangen om een verschil te maken. We begrijpen dat de transitie naar schone energie niet alleen gaat over het verminderen van de CO2-uitstoot; het gaat over het transformeren van levens, gemeenschappen en de structuur van onze samenleving. Het gaat erom individuen en bedrijven in staat te stellen alternatieve energiebronnen te omarmen en tegelijkertijd de economische groei te bevorderen.
+
+Terwijl we door dit complexe proces navigeren, brengen we niet alleen expertise mee, maar ook empathie, omdat we beseffen dat verandering ontmoedigend kan zijn. Wij waarderen samenwerking en zijn bij elke stap actief betrokken bij belanghebbenden – door samen te luisteren, te leren en ons aan te passen. Onze inzet gaat verder dan het leveren van diensten; het ligt in het opbouwen van langdurige relaties gebaseerd op vertrouwen en gedeelde waarden.
+
+Samen met onze klanten, partners en gemeenschappen stellen wij ons een toekomst voor waarin hernieuwbare energiebronnen centraal staan -->

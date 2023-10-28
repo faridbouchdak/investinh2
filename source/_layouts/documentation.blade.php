@@ -1,5 +1,10 @@
 @extends('_layouts.main')
 
+@php
+    use Illuminate\Support\Str;
+    $page->type = 'article';
+@endphp
+
 @section('body')
 <h1 class="text-9xl tracking-tight text-right">Knowledge Base</h1>
 
