@@ -17,7 +17,7 @@
 
     <div class="DocSearch-content w-full break-words pb-16 lg:pl-4" v-pre>
         @yield('content')
-        <p>Modified on: {{ date('F j, Y', $page->date) }}</p>
+        <p>Last modified on: {{ date('F j, Y', $page->getModifiedTime()) }}</p>
     </div>
 </section>
 
