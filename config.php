@@ -30,10 +30,11 @@ return [
         'docs' => [
             'path' => 'kb/{filename}',
             'perPage' => $settings['docs']['limit'],
+            'prefix' => 'page',
         ],
         'events' => [
             'path' => 'events/{filename}',
-            'sort' => 'date'
+            'sort' => 'date',
         ],
         'faqs',
         'pages' => [

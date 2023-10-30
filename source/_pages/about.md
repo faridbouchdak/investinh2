@@ -1,6 +1,6 @@
 ---
 title: About
-description: A little bit about the site
+description: We help governments implement and get the most out of their infrastructure projects
 extends: _layouts.about
 section: content
 ---
