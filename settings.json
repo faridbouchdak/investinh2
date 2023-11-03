@@ -4,10 +4,12 @@
   "keywords": "Hydrogen Energy, green Hydrogen, clean Hydrogen, h2",
   "site_author": "Farid Bouchdak",
   "posts": {
-    "limit": 4
+    "limit": 4,
+    "prefix": "page"
   },
   "docs": {
-    "limit": 4
+    "limit": 4,
+    "prefix": "page"
   },
   "hero": {
     "image": {

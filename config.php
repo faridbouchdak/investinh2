@@ -30,7 +30,7 @@ return [
         'docs' => [
             'path' => 'kb/{filename}',
             'perPage' => $settings['docs']['limit'],
-            'prefix' => 'page',
+            'prefix' => $settings['docs']['prefix'],
         ],
         'events' => [
             'path' => 'events/{filename}',
@@ -45,6 +45,7 @@ return [
             'sort' => '-date',
             'path' => 'blog/{filename}',
             'perPage' => $settings['posts']['limit'],
+            'prefix' => $settings['posts']['prefix'],
         ],
         'services' => [
             'sort' => 'order',

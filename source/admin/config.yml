@@ -347,8 +347,9 @@ collections:
                   name: limit,
                   widget: number,
                   min: 1,
-                  max: 10,
+                  max: 15,
                 }
+              - { label: 'Prefix', name: 'prefix', widget: 'string', hint: 'turn "/blog/2" into "/blog/page/2" for example' }
           - label: 'Knowledge Base Settings'
             name: docs
             widget: 'object'
@@ -358,8 +359,9 @@ collections:
                   name: limit,
                   widget: number,
                   min: 1,
-                  max: 10,
+                  max: 15,
                 }
+              - { label: 'Prefix', name: 'prefix', widget: 'string', hint: 'turn "/docs/2" into "/docs/page/2" for example' }
           - label: 'Hero Settings'
             name: hero
             widget: 'object'

@@ -1,5 +1,5 @@
 ---
-title: Knowlegde Base
+title: Knowledge Base
 description: The list of articles for the site
 pagination:
     collection: docs
@@ -7,7 +7,6 @@ pagination:
 @extends('_layouts.main')
 
 @section('body')
-    <h1>Knowlegde Base</h1>
 
     <hr class="border-b my-6">
 
