@@ -342,6 +342,7 @@ collections:
             name: posts
             widget: 'object'
             fields:
+              - { label: 'Title', name: 'title', widget: 'string', hint: 'this is used in the url, for example: "/blog/" or "/news/"' }
               - {
                   label: 'Number of posts per page',
                   name: limit,
@@ -354,6 +355,7 @@ collections:
             name: docs
             widget: 'object'
             fields:
+              - { label: 'Title', name: 'title', widget: 'string', hint: 'this is used in the url, for example: "/docs/" or "/kb/"' }
               - {
                   label: 'Number of documents per page',
                   name: limit,
@@ -362,6 +364,45 @@ collections:
                   max: 15,
                 }
               - { label: 'Prefix', name: 'prefix', widget: 'string', hint: 'turn "/docs/2" into "/docs/page/2" for example' }
+          - label: 'Clients'
+            name: clients
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', hint: 'this is used in the url, for example: "/clients/" or "/customers/"' }
+              - {
+                  label: 'Number of clients per page',
+                  name: limit,
+                  widget: number,
+                  min: 1,
+                  max: 15,
+                }
+              - { label: 'Prefix', name: 'prefix', widget: 'string', hint: 'turn "/clients/2" into "/clients/page/2" for example' }
+          - label: 'Team'
+            name: team
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', hint: 'this is used in the url, for example: "/team/" or "/people/"' }
+              - {
+                  label: 'Number of team members per page',
+                  name: limit,
+                  widget: number,
+                  min: 1,
+                  max: 15,
+                }
+              - { label: 'Prefix', name: 'prefix', widget: 'string', hint: 'turn "/team/2" into "/team/page/2" for example' }
+          - label: 'Work'
+            name: work
+            widget: 'object'
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string', hint: 'this is used in the url, for example: "/work/" or "/projects/"' }
+              - {
+                  label: 'Number of projects per page',
+                  name: limit,
+                  widget: number,
+                  min: 1,
+                  max: 15,
+                }
+              - { label: 'Prefix', name: 'prefix', widget: 'string', hint: 'turn "/work/2" into "/work/page/2" for example' }
           - label: 'Hero Settings'
             name: hero
             widget: 'object'

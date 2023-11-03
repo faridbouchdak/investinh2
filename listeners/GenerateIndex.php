@@ -37,6 +37,13 @@ class GenerateIndex
                 'snippet' => $page->getExcerpt(),
             ];
         })->values());
+        $data_work = collect($jigsaw->getCollection('work')->map(function ($page) use ($jigsaw) {
+            return [
+                'title' => $page->name,
+                'link' => rightTrimPath($jigsaw->getConfig('baseUrl')) . $page->getPath(),
+                'snippet' => $page->getExcerpt(),
+            ];
+        })->values());
         $data_services = collect($jigsaw->getCollection('services')->map(function ($page) use ($jigsaw) {
             return [
                 'title' => $page->title,
@@ -44,15 +51,15 @@ class GenerateIndex
                 'snippet' => $page->getExcerpt(),
             ];
         })->values());
-        $data_events = collect($jigsaw->getCollection('events')->map(function ($page) use ($jigsaw) {
+        $data_pages = collect($jigsaw->getCollection('pages')->map(function ($page) use ($jigsaw) {
             return [
                 'title' => $page->title,
                 'link' => rightTrimPath($jigsaw->getConfig('baseUrl')) . $page->getPath(),
-                'snippet' => $page->description,
+                'snippet' => $page->getExcerpt(),
             ];
         })->values());
 
-        $data = array_merge(json_decode($data_posts), json_decode($data_team), json_decode($data_docs), json_decode($data_clients), json_decode($data_services), json_decode($data_events));
+        $data = array_merge(json_decode($data_posts), json_decode($data_team), json_decode($data_docs), json_decode($data_clients), json_decode($data_work), json_decode($data_services), json_decode($data_pages));
 
         file_put_contents($jigsaw->getDestinationPath() . '/index.json', json_encode($data));
 

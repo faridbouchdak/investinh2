@@ -15,7 +15,7 @@ return [
     // collections
     'collections' => [
         'categories' => [
-            'path' => '/blog/categories/{filename}',
+            'path' => '/'.$settings['posts']['title'].'/categories/{filename}',
             'posts' => function ($page, $allPosts) {
                 return $allPosts->filter(function ($post) use ($page) {
                     return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
@@ -23,12 +23,14 @@ return [
             },
         ],
         'clients' => [
-            'path' => 'clients/{filename}',
+            'path' => '/'.$settings['clients']['title'].'/{filename}',
+            'perPage' => $settings['clients']['limit'],
+            'prefix' => $settings['clients']['prefix'],
             'sort' => 'name',
         ],
         'cta',
         'docs' => [
-            'path' => 'kb/{filename}',
+            'path' => '/'.$settings['docs']['title'].'/{filename}',
             'perPage' => $settings['docs']['limit'],
             'prefix' => $settings['docs']['prefix'],
         ],
@@ -41,23 +43,27 @@ return [
             'path' => '/{filename}',
         ],
         'posts' => [
-            'author' => $settings['site_author'], // Default author, if not provided in a post
-            'sort' => '-date',
-            'path' => 'blog/{filename}',
+            'path' => '/'.$settings['posts']['title'].'/{filename}',
             'perPage' => $settings['posts']['limit'],
             'prefix' => $settings['posts']['prefix'],
+            'author' => $settings['site_author'], // Default author, if not provided in a post
+            'sort' => '-date',
         ],
         'services' => [
-            'sort' => 'order',
             'path' => 'services/{filename}',
+            'sort' => 'order',
         ],
         'team' => [
-            'path' => 'team/{filename}',
+            'path' => '/'.$settings['team']['title'].'/{filename}',
+            'perPage' => $settings['team']['limit'],
+            'prefix' => $settings['team']['prefix'],
             'sort' => 'name',
         ],
         'testimonials',
         'work' => [
-            'path' => 'work/{filename}',
+            'path' => '/'.$settings['work']['title'].'/{filename}',
+            'perPage' => $settings['work']['limit'],
+            'prefix' => $settings['work']['prefix'],
             'sort' => 'title',
         ],
 
